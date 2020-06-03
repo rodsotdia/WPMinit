@@ -1,3 +1,3 @@
 <div class="mrg-tb-2r">
-	<?php custom_pagination(); // admin/custom-functions-query.php ?>
+	<?php wpminit_custom_pagination(); // admin/custom-functions-query.php ?>
 </div>
