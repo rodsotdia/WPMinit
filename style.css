@@ -94,12 +94,11 @@ h4 {font-size: 1.4rem;}
 h5 {font-size: 1.2rem;}
 h6 {font-size: 1rem;}
 
-/* Centered Content */
-.center-content {margin: 0 auto;}
-.center-auto {margin-left: auto;margin-right: auto;}
-.center-block {margin-left: auto;margin-right: auto;display: block;}
-.center-image {display: block;margin: 0 auto;}
-.center-absolute {margin: 0 auto;right: 0;left: 0;}
+/* Align Normal Content */
+.align-center {margin-left: auto;margin-right: auto;}
+.align-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+.align-right {margin-left: auto;margin-right: 0;}
+.align-left {margin-left: 0;margin-right: auto;}
 
 /* Displays */
 .display-b {display: block;}
@@ -1079,12 +1078,11 @@ strong, b, .bold {font-weight: 700;}
     .pdg-lr-xxl-auto {padding-left: auto;padding-right: auto;}
 
 
-    /* Centered Content */
-    .center-content-xxl {margin: 0 auto;}
-    .center-auto-xxl {margin-left: auto;margin-right: auto;}
-    .center-block-xxl {margin-left: auto;margin-right: auto;display: block;}
-    .center-image-xxl {display: block;margin: 0 auto;}
-    .center-absolute-xxl {margin: 0 auto;right: 0;left: 0;}
+    /* Align Normal Content */
+   .align-xxl-center {margin-left: auto;margin-right: auto;}
+   .align-xxl-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+   .align-xxl-right {margin-left: auto;margin-right: 0;}
+   .align-xxl-left {margin-left: 0;margin-right: auto;}
 
     /* Displays */
     .display-xxl-b {display: block;}
@@ -1527,12 +1525,11 @@ strong, b, .bold {font-weight: 700;}
     .pdg-lr-xl-auto {padding-left: auto;padding-right: auto;}
 
 
-    /* Centered Content */
-    .center-content-xl {margin: 0 auto;}
-    .center-auto-xl {margin-left: auto;margin-right: auto;}
-    .center-block-xl {margin-left: auto;margin-right: auto;display: block;}
-    .center-image-xl {display: block;margin: 0 auto;}
-    .center-absolute-xl {margin: 0 auto;right: 0;left: 0;}
+    /* Align Normal Content */
+   .align-xl-center {margin-left: auto;margin-right: auto;}
+   .align-xl-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+   .align-xl-right {margin-left: auto;margin-right: 0;}
+   .align-xl-left {margin-left: 0;margin-right: auto;}
 
     /* Displays */
     .display-xl-b {display: block;}
@@ -1976,12 +1973,11 @@ strong, b, .bold {font-weight: 700;}
     .pdg-lr-l-auto {padding-left: auto;padding-right: auto;}
 
 
-    /* Centered Content */
-    .center-content-l {margin: 0 auto;}
-    .center-auto-l {margin-left: auto;margin-right: auto;}
-    .center-block-l {margin-left: auto;margin-right: auto;display: block;}
-    .center-image-l {display: block;margin: 0 auto;}
-    .center-absolute-l {margin: 0 auto;right: 0;left: 0;}
+    /* Align Normal Content */
+   .align-l-center {margin-left: auto;margin-right: auto;}
+   .align-l-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+   .align-l-right {margin-left: auto;margin-right: 0;}
+   .align-l-left {margin-left: 0;margin-right: auto;}
 
     /* Displays */
     .display-l-b {display: block;}
@@ -2426,12 +2422,11 @@ strong, b, .bold {font-weight: 700;}
     .pdg-lr-m-auto {padding-left: auto;padding-right: auto;}
 
 
-    /* Centered Content */
-    .center-content-m {margin: 0 auto;}
-    .center-auto-m {margin-left: auto;margin-right: auto;}
-    .center-block-m {margin-left: auto;margin-right: auto;display: block;}
-    .center-image-m {display: block;margin: 0 auto;}
-    .center-absolute-m {margin: 0 auto;right: 0;left: 0;}
+    /* Align Normal Content */
+   .align-m-center {margin-left: auto;margin-right: auto;}
+   .align-m-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+   .align-m-right {margin-left: auto;margin-right: 0;}
+   .align-m-left {margin-left: 0;margin-right: auto;}
 
     /* Displays */
     .display-m-b {display: block;}
@@ -2874,12 +2869,11 @@ strong, b, .bold {font-weight: 700;}
     .pdg-lr-s-auto {padding-left: auto;padding-right: auto;}
 
 
-    /* Centered Content */
-    .center-content-s {margin: 0 auto;}
-    .center-auto-s {margin-left: auto;margin-right: auto;}
-    .center-block-s {margin-left: auto;margin-right: auto;display: block;}
-    .center-image-s {display: block;margin: 0 auto;}
-    .center-absolute-s {margin: 0 auto;right: 0;left: 0;}
+    /* Align Normal Content */
+   .align-s-center {margin-left: auto;margin-right: auto;}
+   .align-s-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+   .align-s-right {margin-left: auto;margin-right: 0;}
+   .align-s-left {margin-left: 0;margin-right: auto;}
 
     /* Displays */
     .display-s-b {display: block;}
@@ -3322,12 +3316,11 @@ strong, b, .bold {font-weight: 700;}
     .pdg-lr-xs-auto {padding-left: auto;padding-right: auto;}
 
 
-    /* Centered Content */
-    .center-content-xs {margin: 0 auto;}
-    .center-auto-xs {margin-left: auto;margin-right: auto;}
-    .center-block-xs {margin-left: auto;margin-right: auto;display: block;}
-    .center-image-xs {display: block;margin: 0 auto;}
-    .center-absolute-xs {margin: 0 auto;right: 0;left: 0;}
+    /* Align Normal Content */
+   .align-xs-center {margin-left: auto;margin-right: auto;}
+   .align-xs-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+   .align-xs-right {margin-left: auto;margin-right: 0;}
+   .align-xs-left {margin-left: 0;margin-right: auto;}
 
     /* Displays */
     .display-xs-b {display: block;}
@@ -3770,12 +3763,11 @@ strong, b, .bold {font-weight: 700;}
     .pdg-lr-xxs-auto {padding-left: auto;padding-right: auto;}
 
 
-    /* Centered Content */
-    .center-content-xxs {margin: 0 auto;}
-    .center-auto-xxs {margin-left: auto;margin-right: auto;}
-    .center-block-xxs {margin-left: auto;margin-right: auto;display: block;}
-    .center-image-xxs {display: block;margin: 0 auto;}
-    .center-absolute-xxs {margin: 0 auto;right: 0;left: 0;}
+    /* Align Normal Content */
+   .align-xxs-center {margin-left: auto;margin-right: auto;}
+   .align-xxs-center-absolute {margin-left: auto;margin-right: auto;right: 0;left: 0;}
+   .align-xxs-right {margin-left: auto;margin-right: 0;}
+   .align-xxs-left {margin-left: 0;margin-right: auto;}
 
     /* Displays */
     .display-xxs-b {display: block;}
