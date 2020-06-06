@@ -1,7 +1,7 @@
 /*
 	Theme Name: WPMinit
 	Description: A personal blank minimal theme for WordPress, to start any project from scratch.
-	Version: 0.1
+	Version: 0.1.1
 	Author: Rod Sot
 	Author URI: https://web.rodsot.com
 */
@@ -55,7 +55,7 @@ p, li {font-size: 1rem;}
 .wrapper-1400 {max-width:1400px;width:100%;margin:0 auto;position: relative;}
 .wrapper-absolute {max-width:1200px;width:100%;margin:0 auto;position:absolute;right: 0;left: 0;top: 0;height: 100%;}
 
-/* Width */
+/* Widths */
 .w5 {width: 5%;}
 .w10 {width: 10%;}
 .w15 {width: 15%;}
@@ -79,6 +79,10 @@ p, li {font-size: 1rem;}
 .w95 {width: 95%;}
 .w100 {width: 100%;}
 .wauto {width: auto;}
+
+/* Heights */
+.h100 {height: 100%;}
+.hauto {height: auto;}
 
 /* Floats */
 .float-none {float: none;}
@@ -398,7 +402,7 @@ strong, b, .bold {font-weight: 700;}
 .lh-1_9 {line-height: 1.9;}
 .lh-2 {line-height: 2;}
 
-/* Heights */
+/* Min Heights & Min widths  */
 .minh-1r {min-height: 1rem;}
 .minh-2r {min-height: 2rem;}
 .minh-3r {min-height: 3rem;}
@@ -409,9 +413,26 @@ strong, b, .bold {font-weight: 700;}
 .minh-8r {min-height: 8rem;}
 .minh-9r {min-height: 9rem;}
 .minh-10r {min-height: 10rem;}
-.h100 {height: 100%;}
-.hauto {height: auto;}
-.hviewport {height: 100vh;}
+.minh-25vh {min-height: 25vh;}
+.minh-50vh {min-height: 50vh;}
+.minh-75vh {min-height: 75vh;}
+.minh-100vh {min-height: 100vh;}
+
+.minw-1r {min-width: 1rem;}
+.minw-2r {min-width: 2rem;}
+.minw-3r {min-width: 3rem;}
+.minw-4r {min-width: 4rem;}
+.minw-5r {min-width: 5rem;}
+.minw-6r {min-width: 6rem;}
+.minw-7r {min-width: 7rem;}
+.minw-8r {min-width: 8rem;}
+.minw-9r {min-width: 9rem;}
+.minw-10r {min-width: 10rem;}
+.minw-25vh {min-width: 25vh;}
+.minw-50vh {min-width: 50vh;}
+.minw-75vh {min-width: 75vh;}
+.minw-100vh {min-width: 100vh;}
+
 
 /* Helper Classes */
 .clear:before,.clear:after {content:' ';display:table;clear: both;}
@@ -775,7 +796,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     /* ---------------
         FW
     ------------------ */
-    /* Width */
+    /* Widths */
     .w-xxl-5 {width: 5%;}
     .w-xxl-10 {width: 10%;}
     .w-xxl-15 {width: 15%;}
@@ -799,6 +820,10 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .w-xxl-95 {width: 95%;}
     .w-xxl-100 {width: 100%;}
     .w-xxl-auto {width: auto;}
+
+    /* Heights */
+   .h100-xxl {height: 100%;}
+   .hauto-xxl {height: auto;}
 
     /* Floats Reset */
     .float-xxl-none {float: none;}
@@ -864,20 +889,36 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
     .wrapline-xxl {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
 
-    /* Min width and heights */
-    .minh-xxl-1r {min-height: 1rem;}
-    .minh-xxl-2r {min-height: 2rem;}
-    .minh-xxl-3r {min-height: 3rem;}
-    .minh-xxl-4r {min-height: 4rem;}
-    .minh-xxl-5r {min-height: 5rem;}
-    .minh-xxl-6r {min-height: 6rem;}
-    .minh-xxl-7r {min-height: 7rem;}
-    .minh-xxl-8r {min-height: 8rem;}
-    .minh-xxl-9r {min-height: 9rem;}
-    .minh-xxl-10r {min-height: 10rem;}
-    .h100-xxl {height: 100%;}
-    .hauto-xxl {height: auto;}
+    /* Min Heights & Min widths  */
+   .minh-xxl-1r {min-height: 1rem;}
+   .minh-xxl-2r {min-height: 2rem;}
+   .minh-xxl-3r {min-height: 3rem;}
+   .minh-xxl-4r {min-height: 4rem;}
+   .minh-xxl-5r {min-height: 5rem;}
+   .minh-xxl-6r {min-height: 6rem;}
+   .minh-xxl-7r {min-height: 7rem;}
+   .minh-xxl-8r {min-height: 8rem;}
+   .minh-xxl-9r {min-height: 9rem;}
+   .minh-xxl-10r {min-height: 10rem;}
+   .minh-xxl-25vh {min-height: 25vh;}
+   .minh-xxl-50vh {min-height: 50vh;}
+   .minh-xxl-75vh {min-height: 75vh;}
+   .minh-xxl-100vh {min-height: 100vh;}
 
+   .minw-xxl-1r {min-width: 1rem;}
+   .minw-xxl-2r {min-width: 2rem;}
+   .minw-xxl-3r {min-width: 3rem;}
+   .minw-xxl-4r {min-width: 4rem;}
+   .minw-xxl-5r {min-width: 5rem;}
+   .minw-xxl-6r {min-width: 6rem;}
+   .minw-xxl-7r {min-width: 7rem;}
+   .minw-xxl-8r {min-width: 8rem;}
+   .minw-xxl-9r {min-width: 9rem;}
+   .minw-xxl-10r {min-width: 10rem;}
+   .minw-xxl-25vh {min-width: 25vh;}
+   .minw-xxl-50vh {min-width: 50vh;}
+   .minw-xxl-75vh {min-width: 75vh;}
+   .minw-xxl-100vh {min-width: 100vh;}
 
     /* Margins */
     .mrg-xxl-0_5r {margin: 0.5rem;}
@@ -1222,7 +1263,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     /* ---------------
         FW
     ------------------ */
-    /* Width */
+    /* Widths */
     .w-xl-5 {width: 5%;}
     .w-xl-10 {width: 10%;}
     .w-xl-15 {width: 15%;}
@@ -1246,6 +1287,10 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .w-xl-95 {width: 95%;}
     .w-xl-100 {width: 100%;}
     .w-xl-auto {width: auto;}
+
+    /* Heights */
+   .h100-xl {height: 100%;}
+   .hauto-xl {height: auto;}
 
     /* Floats Reset */
     .float-xl-none {float: none;}
@@ -1311,20 +1356,36 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
     .wrapline-xl {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
 
-    /* Min width and heights */
-    .minh-xl-1r {min-height: 1rem;}
-    .minh-xl-2r {min-height: 2rem;}
-    .minh-xl-3r {min-height: 3rem;}
-    .minh-xl-4r {min-height: 4rem;}
-    .minh-xl-5r {min-height: 5rem;}
-    .minh-xl-6r {min-height: 6rem;}
-    .minh-xl-7r {min-height: 7rem;}
-    .minh-xl-8r {min-height: 8rem;}
-    .minh-xl-9r {min-height: 9rem;}
-    .minh-xl-10r {min-height: 10rem;}
-    .h100-xl {height: 100%;}
-    .hauto-xl {height: auto;}
+    /* Min Heights & Min widths  */
+   .minh-xl-1r {min-height: 1rem;}
+   .minh-xl-2r {min-height: 2rem;}
+   .minh-xl-3r {min-height: 3rem;}
+   .minh-xl-4r {min-height: 4rem;}
+   .minh-xl-5r {min-height: 5rem;}
+   .minh-xl-6r {min-height: 6rem;}
+   .minh-xl-7r {min-height: 7rem;}
+   .minh-xl-8r {min-height: 8rem;}
+   .minh-xl-9r {min-height: 9rem;}
+   .minh-xl-10r {min-height: 10rem;}
+   .minh-xl-25vh {min-height: 25vh;}
+   .minh-xl-50vh {min-height: 50vh;}
+   .minh-xl-75vh {min-height: 75vh;}
+   .minh-xl-100vh {min-height: 100vh;}
 
+   .minw-xl-1r {min-width: 1rem;}
+   .minw-xl-2r {min-width: 2rem;}
+   .minw-xl-3r {min-width: 3rem;}
+   .minw-xl-4r {min-width: 4rem;}
+   .minw-xl-5r {min-width: 5rem;}
+   .minw-xl-6r {min-width: 6rem;}
+   .minw-xl-7r {min-width: 7rem;}
+   .minw-xl-8r {min-width: 8rem;}
+   .minw-xl-9r {min-width: 9rem;}
+   .minw-xl-10r {min-width: 10rem;}
+   .minw-xl-25vh {min-width: 25vh;}
+   .minw-xl-50vh {min-width: 50vh;}
+   .minw-xl-75vh {min-width: 75vh;}
+   .minw-xl-100vh {min-width: 100vh;}
 
     /* Margins */
     .mrg-xl-0_5r {margin: 0.5rem;}
@@ -1670,7 +1731,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     /* ---------------
         FW
     ------------------ */
-    /* Width */
+    /* Widths */
     .w-l-5 {width: 5%;}
     .w-l-10 {width: 10%;}
     .w-l-15 {width: 15%;}
@@ -1694,6 +1755,10 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .w-l-95 {width: 95%;}
     .w-l-100 {width: 100%;}
     .w-l-auto {width: auto;}
+
+    /* Heights */
+   .h100-l {height: 100%;}
+   .hauto-l {height: auto;}
 
     /* Floats Reset */
     .float-l-none {float: none;}
@@ -1759,20 +1824,36 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
     .wrapline-l {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
 
-    /* Min width and heights */
-    .minh-l-1r {min-height: 1rem;}
-    .minh-l-2r {min-height: 2rem;}
-    .minh-l-3r {min-height: 3rem;}
-    .minh-l-4r {min-height: 4rem;}
-    .minh-l-5r {min-height: 5rem;}
-    .minh-l-6r {min-height: 6rem;}
-    .minh-l-7r {min-height: 7rem;}
-    .minh-l-8r {min-height: 8rem;}
-    .minh-l-9r {min-height: 9rem;}
-    .minh-l-10r {min-height: 10rem;}
-    .h100-l {height: 100%;}
-    .hauto-l {height: auto;}
+    /* Min Heights & Min widths  */
+   .minh-l-1r {min-height: 1rem;}
+   .minh-l-2r {min-height: 2rem;}
+   .minh-l-3r {min-height: 3rem;}
+   .minh-l-4r {min-height: 4rem;}
+   .minh-l-5r {min-height: 5rem;}
+   .minh-l-6r {min-height: 6rem;}
+   .minh-l-7r {min-height: 7rem;}
+   .minh-l-8r {min-height: 8rem;}
+   .minh-l-9r {min-height: 9rem;}
+   .minh-l-10r {min-height: 10rem;}
+   .minh-l-25vh {min-height: 25vh;}
+   .minh-l-50vh {min-height: 50vh;}
+   .minh-l-75vh {min-height: 75vh;}
+   .minh-l-100vh {min-height: 100vh;}
 
+   .minw-l-1r {min-width: 1rem;}
+   .minw-l-2r {min-width: 2rem;}
+   .minw-l-3r {min-width: 3rem;}
+   .minw-l-4r {min-width: 4rem;}
+   .minw-l-5r {min-width: 5rem;}
+   .minw-l-6r {min-width: 6rem;}
+   .minw-l-7r {min-width: 7rem;}
+   .minw-l-8r {min-width: 8rem;}
+   .minw-l-9r {min-width: 9rem;}
+   .minw-l-10r {min-width: 10rem;}
+   .minw-l-25vh {min-width: 25vh;}
+   .minw-l-50vh {min-width: 50vh;}
+   .minw-l-75vh {min-width: 75vh;}
+   .minw-l-100vh {min-width: 100vh;}
 
     /* Margins */
     .mrg-l-0_5r {margin: 0.5rem;}
@@ -2119,7 +2200,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     /* ---------------
         FW
     ------------------ */
-    /* Width */
+    /* Widths */
     .w-m-5 {width: 5%;}
     .w-m-10 {width: 10%;}
     .w-m-15 {width: 15%;}
@@ -2143,6 +2224,10 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .w-m-95 {width: 95%;}
     .w-m-100 {width: 100%;}
     .w-m-auto {width: auto;}
+
+    /* Heights */
+   .h100-m {height: 100%;}
+   .hauto-m {height: auto;}
 
     /* Floats Reset */
     .float-m-none {float: none;}
@@ -2208,20 +2293,36 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
     .wrapline-m {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
 
-    /* Min width and heights */
-    .minh-m-1r {min-height: 1rem;}
-    .minh-m-2r {min-height: 2rem;}
-    .minh-m-3r {min-height: 3rem;}
-    .minh-m-4r {min-height: 4rem;}
-    .minh-m-5r {min-height: 5rem;}
-    .minh-m-6r {min-height: 6rem;}
-    .minh-m-7r {min-height: 7rem;}
-    .minh-m-8r {min-height: 8rem;}
-    .minh-m-9r {min-height: 9rem;}
-    .minh-m-10r {min-height: 10rem;}
-    .h100-m {height: 100%;}
-    .hauto-m {height: auto;}
+    /* Min Heights & Min widths  */
+   .minh-m-1r {min-height: 1rem;}
+   .minh-m-2r {min-height: 2rem;}
+   .minh-m-3r {min-height: 3rem;}
+   .minh-m-4r {min-height: 4rem;}
+   .minh-m-5r {min-height: 5rem;}
+   .minh-m-6r {min-height: 6rem;}
+   .minh-m-7r {min-height: 7rem;}
+   .minh-m-8r {min-height: 8rem;}
+   .minh-m-9r {min-height: 9rem;}
+   .minh-m-10r {min-height: 10rem;}
+   .minh-m-25vh {min-height: 25vh;}
+   .minh-m-50vh {min-height: 50vh;}
+   .minh-m-75vh {min-height: 75vh;}
+   .minh-m-100vh {min-height: 100vh;}
 
+   .minw-m-1r {min-width: 1rem;}
+   .minw-m-2r {min-width: 2rem;}
+   .minw-m-3r {min-width: 3rem;}
+   .minw-m-4r {min-width: 4rem;}
+   .minw-m-5r {min-width: 5rem;}
+   .minw-m-6r {min-width: 6rem;}
+   .minw-m-7r {min-width: 7rem;}
+   .minw-m-8r {min-width: 8rem;}
+   .minw-m-9r {min-width: 9rem;}
+   .minw-m-10r {min-width: 10rem;}
+   .minw-m-25vh {min-width: 25vh;}
+   .minw-m-50vh {min-width: 50vh;}
+   .minw-m-75vh {min-width: 75vh;}
+   .minw-m-100vh {min-width: 100vh;}
 
     /* Margins */
     .mrg-m-0_5r {margin: 0.5rem;}
@@ -2566,7 +2667,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     /* ---------------
         FW
     ------------------ */
-    /* Width */
+    /* Widths */
     .w-s-5 {width: 5%;}
     .w-s-10 {width: 10%;}
     .w-s-15 {width: 15%;}
@@ -2590,6 +2691,10 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .w-s-95 {width: 95%;}
     .w-s-100 {width: 100%;}
     .w-s-auto {width: auto;}
+
+    /* Heights */
+   .h100-s {height: 100%;}
+   .hauto-s {height: auto;}
 
     /* Floats Reset */
     .float-s-none {float: none;}
@@ -2655,20 +2760,36 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
     .wrapline-s {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
 
-    /* Min width and heights */
-    .minh-s-1r {min-height: 1rem;}
-    .minh-s-2r {min-height: 2rem;}
-    .minh-s-3r {min-height: 3rem;}
-    .minh-s-4r {min-height: 4rem;}
-    .minh-s-5r {min-height: 5rem;}
-    .minh-s-6r {min-height: 6rem;}
-    .minh-s-7r {min-height: 7rem;}
-    .minh-s-8r {min-height: 8rem;}
-    .minh-s-9r {min-height: 9rem;}
-    .minh-s-10r {min-height: 10rem;}
-    .h100-s {height: 100%;}
-    .hauto-s {height: auto;}
+    /* Min Heights & Min widths  */
+   .minh-s-1r {min-height: 1rem;}
+   .minh-s-2r {min-height: 2rem;}
+   .minh-s-3r {min-height: 3rem;}
+   .minh-s-4r {min-height: 4rem;}
+   .minh-s-5r {min-height: 5rem;}
+   .minh-s-6r {min-height: 6rem;}
+   .minh-s-7r {min-height: 7rem;}
+   .minh-s-8r {min-height: 8rem;}
+   .minh-s-9r {min-height: 9rem;}
+   .minh-s-10r {min-height: 10rem;}
+   .minh-s-25vh {min-height: 25vh;}
+   .minh-s-50vh {min-height: 50vh;}
+   .minh-s-75vh {min-height: 75vh;}
+   .minh-s-100vh {min-height: 100vh;}
 
+   .minw-s-1r {min-width: 1rem;}
+   .minw-s-2r {min-width: 2rem;}
+   .minw-s-3r {min-width: 3rem;}
+   .minw-s-4r {min-width: 4rem;}
+   .minw-s-5r {min-width: 5rem;}
+   .minw-s-6r {min-width: 6rem;}
+   .minw-s-7r {min-width: 7rem;}
+   .minw-s-8r {min-width: 8rem;}
+   .minw-s-9r {min-width: 9rem;}
+   .minw-s-10r {min-width: 10rem;}
+   .minw-s-25vh {min-width: 25vh;}
+   .minw-s-50vh {min-width: 50vh;}
+   .minw-s-75vh {min-width: 75vh;}
+   .minw-s-100vh {min-width: 100vh;}
 
     /* Margins */
     .mrg-s-0_5r {margin: 0.5rem;}
@@ -3013,7 +3134,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     /* ---------------
         FW
     ------------------ */
-    /* Width */
+    /* Widths */
     .w-xs-5 {width: 5%;}
     .w-xs-10 {width: 10%;}
     .w-xs-15 {width: 15%;}
@@ -3037,6 +3158,10 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .w-xs-95 {width: 95%;}
     .w-xs-100 {width: 100%;}
     .w-xs-auto {width: auto;}
+
+    /* Heights */
+   .h100-xs {height: 100%;}
+   .hauto-xs {height: auto;}
 
     /* Floats Reset */
     .float-xs-none {float: none;}
@@ -3102,20 +3227,36 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
     .wrapline-xs {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
 
-    /* Min width and heights */
-    .minh-xs-1r {min-height: 1rem;}
-    .minh-xs-2r {min-height: 2rem;}
-    .minh-xs-3r {min-height: 3rem;}
-    .minh-xs-4r {min-height: 4rem;}
-    .minh-xs-5r {min-height: 5rem;}
-    .minh-xs-6r {min-height: 6rem;}
-    .minh-xs-7r {min-height: 7rem;}
-    .minh-xs-8r {min-height: 8rem;}
-    .minh-xs-9r {min-height: 9rem;}
-    .minh-xs-10r {min-height: 10rem;}
-    .h100-xs {height: 100%;}
-    .hauto-xs {height: auto;}
+    /* Min Heights & Min widths  */
+   .minh-xs-1r {min-height: 1rem;}
+   .minh-xs-2r {min-height: 2rem;}
+   .minh-xs-3r {min-height: 3rem;}
+   .minh-xs-4r {min-height: 4rem;}
+   .minh-xs-5r {min-height: 5rem;}
+   .minh-xs-6r {min-height: 6rem;}
+   .minh-xs-7r {min-height: 7rem;}
+   .minh-xs-8r {min-height: 8rem;}
+   .minh-xs-9r {min-height: 9rem;}
+   .minh-xs-10r {min-height: 10rem;}
+   .minh-xs-25vh {min-height: 25vh;}
+   .minh-xs-50vh {min-height: 50vh;}
+   .minh-xs-75vh {min-height: 75vh;}
+   .minh-xs-100vh {min-height: 100vh;}
 
+   .minw-xs-1r {min-width: 1rem;}
+   .minw-xs-2r {min-width: 2rem;}
+   .minw-xs-3r {min-width: 3rem;}
+   .minw-xs-4r {min-width: 4rem;}
+   .minw-xs-5r {min-width: 5rem;}
+   .minw-xs-6r {min-width: 6rem;}
+   .minw-xs-7r {min-width: 7rem;}
+   .minw-xs-8r {min-width: 8rem;}
+   .minw-xs-9r {min-width: 9rem;}
+   .minw-xs-10r {min-width: 10rem;}
+   .minw-xs-25vh {min-width: 25vh;}
+   .minw-xs-50vh {min-width: 50vh;}
+   .minw-xs-75vh {min-width: 75vh;}
+   .minw-xs-100vh {min-width: 100vh;}
 
     /* Margins */
     .mrg-xs-0_5r {margin: 0.5rem;}
@@ -3460,7 +3601,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     /* ---------------
         FW
     ------------------ */
-    /* Width */
+    /* Widths */
     .w-xxs-5 {width: 5%;}
     .w-xxs-10 {width: 10%;}
     .w-xxs-15 {width: 15%;}
@@ -3484,6 +3625,10 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .w-xxs-95 {width: 95%;}
     .w-xxs-100 {width: 100%;}
     .w-xxs-auto {width: auto;}
+
+    /* Heights */
+   .h100-xxs {height: 100%;}
+   .hauto-xxs {height: auto;}
 
     /* Floats Reset */
     .float-xxs-none {float: none;}
@@ -3549,20 +3694,36 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
     .wrapline-xxs {white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;}
 
-    /* Min width and heights */
-    .minh-xxs-1r {min-height: 1rem;}
-    .minh-xxs-2r {min-height: 2rem;}
-    .minh-xxs-3r {min-height: 3rem;}
-    .minh-xxs-4r {min-height: 4rem;}
-    .minh-xxs-5r {min-height: 5rem;}
-    .minh-xxs-6r {min-height: 6rem;}
-    .minh-xxs-7r {min-height: 7rem;}
-    .minh-xxs-8r {min-height: 8rem;}
-    .minh-xxs-9r {min-height: 9rem;}
-    .minh-xxs-10r {min-height: 10rem;}
-    .h100-xxs {height: 100%;}
-    .hauto-xxs {height: auto;}
+    /* Min Heights & Min widths  */
+   .minh-xxs-1r {min-height: 1rem;}
+   .minh-xxs-2r {min-height: 2rem;}
+   .minh-xxs-3r {min-height: 3rem;}
+   .minh-xxs-4r {min-height: 4rem;}
+   .minh-xxs-5r {min-height: 5rem;}
+   .minh-xxs-6r {min-height: 6rem;}
+   .minh-xxs-7r {min-height: 7rem;}
+   .minh-xxs-8r {min-height: 8rem;}
+   .minh-xxs-9r {min-height: 9rem;}
+   .minh-xxs-10r {min-height: 10rem;}
+   .minh-xxs-25vh {min-height: 25vh;}
+   .minh-xxs-50vh {min-height: 50vh;}
+   .minh-xxs-75vh {min-height: 75vh;}
+   .minh-xxs-100vh {min-height: 100vh;}
 
+   .minw-xxs-1r {min-width: 1rem;}
+   .minw-xxs-2r {min-width: 2rem;}
+   .minw-xxs-3r {min-width: 3rem;}
+   .minw-xxs-4r {min-width: 4rem;}
+   .minw-xxs-5r {min-width: 5rem;}
+   .minw-xxs-6r {min-width: 6rem;}
+   .minw-xxs-7r {min-width: 7rem;}
+   .minw-xxs-8r {min-width: 8rem;}
+   .minw-xxs-9r {min-width: 9rem;}
+   .minw-xxs-10r {min-width: 10rem;}
+   .minw-xxs-25vh {min-width: 25vh;}
+   .minw-xxs-50vh {min-width: 50vh;}
+   .minw-xxs-75vh {min-width: 75vh;}
+   .minw-xxs-100vh {min-width: 100vh;}
 
     /* Margins */
     .mrg-xxs-0_5r {margin: 0.5rem;}
