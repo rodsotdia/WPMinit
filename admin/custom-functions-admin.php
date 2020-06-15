@@ -16,6 +16,7 @@
 - FEATURED IMAGE IN DASHBOARD'S COLUMNS
 - OPTIONS PAGE ACF
 - FIX GUTENBERG EDITOR CLOUDFRONT
+- CHANGE COLOR PALETTE GUTENBERG
 
 *****************************/
 
@@ -351,6 +352,29 @@ add_action('manage_posts_custom_column', 'columns_content_photos_slides', 10, 2)
     add_filter('user_can_richedit','__return_true');
 }
 add_action( 'init', 'richedit_wp_cloudfront', 9 );*/
+
+/*-----------------------------------------------------
+   CHANGE COLOR PALETTE GUTENBERG
+-----------------------------------------------------*/
+/* 
+Needs to add specific classes for colors in admin and frontend
+Example: .has-name-color-1-color {color: #e72b87;}
+*/
+/*function wpminit_custom_colors_support() {
+   add_theme_support( 'editor-color-palette', array(
+       array(
+           'name' => __( 'NAME_COLOR_1' ),
+           'slug' => 'name-color-1',
+           'color' => '#e72b87',
+       ),
+       array(
+           'name' => __( 'NAME_COLOR_2' ),
+           'slug' => 'name-color-2',
+           'color' => '#202259',
+       )
+   ));
+}
+add_action( 'after_setup_theme', 'wpminit_custom_colors_support' );*/
 
 
 ?>
