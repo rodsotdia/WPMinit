@@ -119,7 +119,7 @@ add_filter('the_content', 'wpminit_fix_shortcodes');
     REMOVE PREFIX FROM PRIVATE AND PROTECT POSTS
  ----------------------------------------------------------- */
 function wpminit_replace_the_title($title) {
-    $title = attribute_escape($title);
+    $title = esc_attr($title);
     $findthese = array(
         '#Protected:#', // Protected
         '#Private:#' // Private
