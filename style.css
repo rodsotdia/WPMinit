@@ -797,28 +797,28 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     14. RESPONSIVE
 \*------------------------------------*/
 /*
-- Max width 2560px - 4k
-- Max width 1920px - xxxl
-- Max width 1440px - xxl
+- Min width 2000px
+- Max width 1999px - xxxl
+- Max width 1536px - xxl
 - Max width 1280px - xl
 - Max width 1024px - l
 - Max width 800px - m
 - Max width 600px - s
-- Max width 480px - xs
-- Max width 360px - xxs
+- Max width 450px - xs
+- Max width 380px - xxs
 */
 
-@media only screen and (max-width:2560px) { /* 4k */
+@media only screen and (min-width:2000px) { /* Min width 2000px */
 
 
 }
 
-@media only screen and (max-width:1920px) { /* xxxl */
+@media only screen and (max-width:1999px) { /* xxxl */
 
 
 }
 
-@media only screen and (max-width:1440px) { /* xxl */
+@media only screen and (max-width:1536px) { /* xxl */
     /* ---------------
         THEME
     ------------------ */
@@ -3309,7 +3309,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
     .svg-s-fluid svg {width: 100%;}
 }
 
-@media only screen and (max-width:480px) { /* xs */
+@media only screen and (max-width:450px) { /* xs */
     /* ---------------
         THEME
     ------------------ */
@@ -3809,7 +3809,7 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
 }
 
-@media only screen and (max-width:360px) { /* xxs */
+@media only screen and (max-width:380px) { /* xxs */
     /* ---------------
         THEME
     ------------------ */
