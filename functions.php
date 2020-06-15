@@ -26,14 +26,24 @@ if (function_exists('add_theme_support'))
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
-    //add_image_size('featured-small', 120, 120, true);
 
-    //add_filter( 'image_size_names_choose', 'wpminit_custom_sizes' );
+    // Images resize only by width
+    add_image_size('image_extra_large', 2000);
+    add_image_size('image_large', 1600);
+    add_image_size('image_medium', 1200);
+    add_image_size('image_small', 800);
+    add_image_size('image_extra_small', 400);
+
+    add_filter( 'image_size_names_choose', 'wpminit_custom_sizes' );
 
     function wpminit_custom_sizes( $sizes ) {
         return array_merge( $sizes, array(
-            'featured-small' => __( 'Small' ),
-        ) );
+            'image_extra_large' => __( 'Image 2000px' ),
+            'image_large' => __( 'Image 1600px' ),
+            'image_medium' => __( 'Image 1200px' ),
+            'image_small' => __( 'Image 800px' ),
+            'image_extra_small' => __( 'Image 400px' ),
+        ));
     }
 
     // Enables post and comment RSS feed links to head
