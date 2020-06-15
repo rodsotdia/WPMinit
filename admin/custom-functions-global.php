@@ -160,7 +160,7 @@ function wpminit_login_logo_url_title() {
 add_filter( 'login_headertext', 'wpminit_login_logo_url_title' );
 
 function wpminit_remove_lostpassword_text ( $text ) {
-    if ($text == 'Did you forget your password?'){$text = '';}
+    if ($text == 'Lost your password?'){$text = '';}
     return $text;
 }
 add_filter( 'gettext', 'wpminit_remove_lostpassword_text' );
