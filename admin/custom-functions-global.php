@@ -157,7 +157,7 @@ add_filter( 'login_headerurl', 'wpminit_login_logo_url' );
 function wpminit_login_logo_url_title() {
     return 'WPMinit';
 }
-add_filter( 'login_headertitle', 'wpminit_login_logo_url_title' );
+add_filter( 'login_headertext', 'wpminit_login_logo_url_title' );
 
 function wpminit_remove_lostpassword_text ( $text ) {
     if ($text == 'Did you forget your password?'){$text = '';}
