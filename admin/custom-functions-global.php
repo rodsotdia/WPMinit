@@ -42,21 +42,36 @@ add_filter('wp_editor_set_quality', function($arg){return 90;});
 /*-----------------------------------------------------
    UNSET SIZE IMAGES DEFAULT
 -----------------------------------------------------*/
+/*-----------------------------------------------------
+   UNSET SIZE IMAGES DEFAULT
+-----------------------------------------------------*/
 function wpminit_remove_default_image_sizes( $sizes ) {
-    //Default WordPress 
-    unset( $sizes[ 'thumbnail' ]);
-    unset( $sizes[ 'medium' ]);
-    unset( $sizes[ 'medium_large' ]);
-    unset( $sizes[ 'large' ]);
+   //Default WordPress 
+   unset($sizes['thumbnail']); // disable thumbnail size
+   unset($sizes['medium']); // disable medium size
+   unset($sizes['large']); // disable large size
+   unset($sizes['medium_large']); // disable 768px size images
+   unset($sizes['1536x1536']); // disable 2x medium-large size
+   unset($sizes['2048x2048']); // disable 2x large size
 
-    // With WooCommerce
-    // unset( $sizes[ 'shop_thumbnail' ]);  // Remove Shop thumbnail (180 x 180 hard cropped)
-    // unset( $sizes[ 'shop_catalog' ]);    // Remove Shop catalog (300 x 300 hard cropped)
-    // unset( $sizes[ 'shop_single' ]);     // Shop single (600 x 600 hard cropped)
+   // With WooCommerce
+   // unset( $sizes[ 'shop_thumbnail' ]);  // Remove Shop thumbnail (180 x 180 hard cropped)
+   // unset( $sizes[ 'shop_catalog' ]);    // Remove Shop catalog (300 x 300 hard cropped)
+   // unset( $sizes[ 'shop_single' ]);     // Shop single (600 x 600 hard cropped)
 
-    return $sizes;
+   return $sizes;
 }
 add_filter( 'intermediate_image_sizes_advanced', 'wpminit_remove_default_image_sizes' );
+
+// disable scaled image size
+add_filter('big_image_size_threshold', '__return_false');
+
+// disable other image sizes
+/*function wpminit_disable_other_image_sizes() {
+  remove_image_size('post-thumbnail'); // disable images added via set_post_thumbnail_size() 
+  remove_image_size('another-size');   // disable any other added image sizes
+}
+add_action('init', 'wpminit_disable_other_image_sizes');*/
 
 /*-----------------------------------------------------
    GET ATTACHMENTS INFO FUNCTION
