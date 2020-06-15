@@ -184,6 +184,18 @@ h6 {font-size: 1rem;}
 .mrg-right-9r {margin-right: 9rem;}
 .mrg-bottom-9r {margin-bottom: 9rem;}
 .mrg-left-9r {margin-left: 9rem;}
+.mrg-top-10r {margin-top: 10rem;}
+.mrg-right-10r {margin-right: 10rem;}
+.mrg-bottom-10r {margin-bottom: 10rem;}
+.mrg-left-10r {margin-left: 10rem;}
+.mrg-top-11r {margin-top: 11rem;}
+.mrg-right-11r {margin-right: 11rem;}
+.mrg-bottom-11r {margin-bottom: 11rem;}
+.mrg-left-11r {margin-left: 11rem;}
+.mrg-top-12r {margin-top: 12rem;}
+.mrg-right-12r {margin-right: 12rem;}
+.mrg-bottom-12r {margin-bottom: 12rem;}
+.mrg-left-12r {margin-left: 12rem;}
 .mrg-0 {margin: 0;}
 .mrg-top-0 {margin-top: 0;}
 .mrg-right-0 {margin-right: 0;}
@@ -255,6 +267,18 @@ h6 {font-size: 1rem;}
 .pdg-right-9r {padding-right: 9rem;}
 .pdg-bottom-9r {padding-bottom: 9rem;}
 .pdg-left-9r {padding-left: 9rem;}
+.pdg-top-10r {padding-top: 10rem;}
+.pdg-right-10r {padding-right: 10rem;}
+.pdg-bottom-10r {padding-bottom: 10rem;}
+.pdg-left-10r {padding-left: 10rem;}
+.pdg-top-11r {padding-top: 11rem;}
+.pdg-right-11r {padding-right: 11rem;}
+.pdg-bottom-11r {padding-bottom: 11rem;}
+.pdg-left-11r {padding-left: 11rem;}
+.pdg-top-12r {padding-top: 12rem;}
+.pdg-right-12r {padding-right: 12rem;}
+.pdg-bottom-12r {padding-bottom: 12rem;}
+.pdg-left-12r {padding-left: 12rem;}
 .pdg-0 {padding: 0;}
 .pdg-top-0 {padding-top: 0;}
 .pdg-right-0 {padding-right: 0;}
@@ -274,6 +298,9 @@ h6 {font-size: 1rem;}
 .mrg-tb-7r {margin-top: 7rem;margin-bottom: 7rem;}
 .mrg-tb-8r {margin-top: 8rem;margin-bottom: 8rem;}
 .mrg-tb-9r {margin-top: 9rem;margin-bottom: 9rem;}
+.mrg-tb-10r {margin-top: 10rem;margin-bottom: 10rem;}
+.mrg-tb-11r {margin-top: 11rem;margin-bottom: 11rem;}
+.mrg-tb-12r {margin-top: 12rem;margin-bottom: 12rem;}
 .mrg-tb-0 {margin-top: 0;margin-bottom: 0;}
 .mrg-tb-auto {margin-top: auto;margin-bottom: auto;}
 
@@ -304,6 +331,9 @@ h6 {font-size: 1rem;}
 .pdg-tb-7r {padding-top: 7rem;padding-bottom: 7rem;}
 .pdg-tb-8r {padding-top: 8rem;padding-bottom: 8rem;}
 .pdg-tb-9r {padding-top: 9rem;padding-bottom: 9rem;}
+.pdg-tb-10r {padding-top: 10rem;padding-bottom: 10rem;}
+.pdg-tb-11r {padding-top: 11rem;padding-bottom: 11rem;}
+.pdg-tb-12r {padding-top: 12rem;padding-bottom: 12rem;}
 .pdg-tb-0 {padding-top: 0;padding-bottom: 0;}
 
 .pdg-lr-0_5r {padding-left: 0.5rem;padding-right: 0.5rem;}
