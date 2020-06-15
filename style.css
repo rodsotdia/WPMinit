@@ -528,8 +528,8 @@ strong, b, .bold {font-weight: 700;}
 
 .flex-row {flex-direction: row;}
 .flex-row-reverse {flex-direction: row-reverse;}
-.flex-column {flex-direction: column;}
-.flex-column-reverse {flex-direction: column-reverse;}
+.flex-col {flex-direction: column;}
+.flex-col-reverse {flex-direction: column-reverse;}
 
 .flex-nowrap {flex-wrap: nowrap;}
 .flex-wrap {flex-wrap: wrap;}
@@ -538,8 +538,8 @@ strong, b, .bold {font-weight: 700;}
 .flex-juscon-start {justify-content: flex-start;}
 .flex-juscon-end {justify-content: flex-end;}
 .flex-juscon-center {justify-content: center;}
-.flex-juscon-space-between {justify-content: space-between;}
-.flex-juscon-space-around {justify-content: space-around;}
+.flex-juscon-between {justify-content: space-between;}
+.flex-juscon-around {justify-content: space-around;}
 
 .flex-alitems-start {align-items: flex-start;}
 .flex-alitems-end {align-items: flex-end;}
@@ -547,12 +547,12 @@ strong, b, .bold {font-weight: 700;}
 .flex-alitems-baseline {align-items: baseline;}
 .flex-alitems-stretch {align-items: stretch;}
 
-.flex-alicontent-start {align-content: flex-start;}
-.flex-alicontent-end {align-content: flex-end;}
-.flex-alicontent-center {align-content: center;}
-.flex-alicontent-space-between {align-content: space-between;}
-.flex-alicontent-space-around {align-content: space-around;}
-.flex-alicontent-stretch {align-content: stretch;}
+.flex-alicon-start {align-content: flex-start;}
+.flex-alicon-end {align-content: flex-end;}
+.flex-alicon-center {align-content: center;}
+.flex-alicon-between {align-content: space-between;}
+.flex-alicon-around {align-content: space-around;}
+.flex-alicon-stretch {align-content: stretch;}
 
 /* Flexbox Items */
 .flexitem-order {order: 0;}
@@ -578,45 +578,67 @@ strong, b, .bold {font-weight: 700;}
 /* Grid Container */
 .grid {display: grid;}
 
-.grid-justify-items-start {justify-items: start;}
-.grid-justify-items-end {justify-items: end;}
-.grid-justify-items-center {justify-items: center;}
-.grid-justify-items-stretch {justify-items: stretch;}
+.grid-jusitems-start {justify-items: start;}
+.grid-jusitems-end {justify-items: end;}
+.grid-jusitems-center {justify-items: center;}
+.grid-jusitems-stretch {justify-items: stretch;}
 
-.grid-justify-content-start {justify-content: start;}
-.grid-justify-content-end {justify-content: end;}
-.grid-justify-content-center {justify-content: center;}
-.grid-justify-content-stretch {justify-content: stretch;}
-.grid-justify-content-around {justify-content: space-around;}
-.grid-justify-content-between {justify-content: space-between;}
-.grid-justify-content-evenly {justify-content: space-evenly;}
+.grid-juscon-start {justify-content: start;}
+.grid-juscon-end {justify-content: end;}
+.grid-juscon-center {justify-content: center;}
+.grid-juscon-stretch {justify-content: stretch;}
+.grid-juscon-around {justify-content: space-around;}
+.grid-juscon-between {justify-content: space-between;}
+.grid-juscon-evenly {justify-content: space-evenly;}
 
-.grid-align-items-start {align-items: start;}
-.grid-align-items-end {align-items: end;}
-.grid-align-items-center {align-items: center;}
-.grid-align-items-stretch {align-items: stretch;}
+.grid-alitems-start {align-items: start;}
+.grid-alitems-end {align-items: end;}
+.grid-alitems-center {align-items: center;}
+.grid-alitems-stretch {align-items: stretch;}
 
-.grid-align-content-start {align-content: start;}
-.grid-align-content-end {align-content: end;}
-.grid-align-content-center {align-content: center;}
-.grid-align-content-stretch {align-content: stretch;}
-.grid-align-content-around {align-content: space-around;}
-.grid-align-content-between {align-content: space-between;}
-.grid-align-content-evenly {align-content: space-evenly;}
+.grid-alicon-start {align-content: start;}
+.grid-alicon-end {align-content: end;}
+.grid-alicon-center {align-content: center;}
+.grid-alicon-stretch {align-content: stretch;}
+.grid-alicon-around {align-content: space-around;}
+.grid-alicon-between {align-content: space-between;}
+.grid-alicon-evenly {align-content: space-evenly;}
 
 /* Grid Item */
-.grid-justify-self-start {justify-self: start;}
-.grid-justify-self-end {justify-self: end;}
-.grid-justify-self-center {justify-self: center;}
-.grid-justify-self-stretch {justify-self: stretch;}
+.grid-jusself-start {justify-self: start;}
+.grid-jusself-end {justify-self: end;}
+.grid-jusself-center {justify-self: center;}
+.grid-jusself-stretch {justify-self: stretch;}
 
-.grid-align-self-start {align-self: start;}
-.grid-align-self-end {align-self: end;}
-.grid-align-self-center {align-self: center;}
-.grid-align-self-stretch {align-self: stretch;}
+.grid-aliself-start {align-self: start;}
+.grid-aliself-end {align-self: end;}
+.grid-aliself-center {align-self: center;}
+.grid-aliself-stretch {align-self: stretch;}
 
-/* Grid Custom */
+/* Grid Columns and Gaps */
+.grid-cols-1 {grid-template-columns: 1fr;}
+.grid-cols-2 {grid-template-columns: repeat(2, 1fr);}
+.grid-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+.grid-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+.grid-cols-6 {grid-template-columns: repeat(6, 1fr);;}
 
+.grid-gap-1r {grid-gap: 1rem;}
+.grid-gap-2r {grid-gap: 2rem;}
+.grid-gap-3r {grid-gap: 3rem;}
+.grid-gap-4r {grid-gap: 4rem;}
+.grid-gap-5r {grid-gap: 5rem;}
+
+.grid-gap-col-1r {grid-column-gap: 1rem;}
+.grid-gap-col-2r {grid-column-gap: 2rem;}
+.grid-gap-col-3r {grid-column-gap: 3rem;}
+.grid-gap-col-4r {grid-column-gap: 4rem;}
+.grid-gap-col-5r {grid-column-gap: 5rem;}
+
+.grid-gap-row-1r {grid-row-gap: 1rem;}
+.grid-gap-row-2r {grid-row-gap: 2rem;}
+.grid-gap-row-3r {grid-row-gap: 3rem;}
+.grid-gap-row-4r {grid-row-gap: 4rem;}
+.grid-gap-row-5r {grid-row-gap: 5rem;}
 
 
 /*------------------------------------*\
@@ -1241,8 +1263,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
    .flex-xxl-row {flex-direction: row;}
    .flex-xxl-row-reverse {flex-direction: row-reverse;}
-   .flex-xxl-column {flex-direction: column;}
-   .flex-xxl-column-reverse {flex-direction: column-reverse;}
+   .flex-xxl-col {flex-direction: column;}
+   .flex-xxl-col-reverse {flex-direction: column-reverse;}
 
    .flex-xxl-nowrap {flex-wrap: nowrap;}
    .flex-xxl-wrap {flex-wrap: wrap;}
@@ -1251,8 +1273,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xxl-juscon-start {justify-content: flex-start;}
    .flex-xxl-juscon-end {justify-content: flex-end;}
    .flex-xxl-juscon-center {justify-content: center;}
-   .flex-xxl-juscon-space-between {justify-content: space-between;}
-   .flex-xxl-juscon-space-around {justify-content: space-around;}
+   .flex-xxl-juscon-between {justify-content: space-between;}
+   .flex-xxl-juscon-around {justify-content: space-around;}
 
    .flex-xxl-alitems-start {align-items: flex-start;}
    .flex-xxl-alitems-end {align-items: flex-end;}
@@ -1260,12 +1282,12 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xxl-alitems-baseline {align-items: baseline;}
    .flex-xxl-alitems-stretch {align-items: stretch;}
 
-   .flex-xxl-alicontent-start {align-content: flex-start;}
-   .flex-xxl-alicontent-end {align-content: flex-end;}
-   .flex-xxl-alicontent-center {align-content: center;}
-   .flex-xxl-alicontent-space-between {align-content: space-between;}
-   .flex-xxl-alicontent-space-around {align-content: space-around;}
-   .flex-xxl-alicontent-stretch {align-content: stretch;}
+   .flex-xxl-alicon-start {align-content: flex-start;}
+   .flex-xxl-alicon-end {align-content: flex-end;}
+   .flex-xxl-alicon-center {align-content: center;}
+   .flex-xxl-alicon-between {align-content: space-between;}
+   .flex-xxl-alicon-around {align-content: space-around;}
+   .flex-xxl-alicon-stretch {align-content: stretch;}
 
    /* Flexbox Items */
    .flexitem-xxl-order {order: 0;}
@@ -1289,42 +1311,67 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    /* Grid Container */
    .grid-xxl {display: grid;}
 
-   .grid-xxl-justify-items-start {justify-items: start;}
-   .grid-xxl-justify-items-end {justify-items: end;}
-   .grid-xxl-justify-items-center {justify-items: center;}
-   .grid-xxl-justify-items-stretch {justify-items: stretch;}
+   .grid-xxl-jusitems-start {justify-items: start;}
+   .grid-xxl-jusitems-end {justify-items: end;}
+   .grid-xxl-jusitems-center {justify-items: center;}
+   .grid-xxl-jusitems-stretch {justify-items: stretch;}
 
-   .grid-xxl-justify-content-start {justify-content: start;}
-   .grid-xxl-justify-content-end {justify-content: end;}
-   .grid-xxl-justify-content-center {justify-content: center;}
-   .grid-xxl-justify-content-stretch {justify-content: stretch;}
-   .grid-xxl-justify-content-around {justify-content: space-around;}
-   .grid-xxl-justify-content-between {justify-content: space-between;}
-   .grid-xxl-justify-content-evenly {justify-content: space-evenly;}
+   .grid-xxl-juscon-start {justify-content: start;}
+   .grid-xxl-juscon-end {justify-content: end;}
+   .grid-xxl-juscon-center {justify-content: center;}
+   .grid-xxl-juscon-stretch {justify-content: stretch;}
+   .grid-xxl-juscon-around {justify-content: space-around;}
+   .grid-xxl-juscon-between {justify-content: space-between;}
+   .grid-xxl-juscon-evenly {justify-content: space-evenly;}
 
-   .grid-xxl-align-items-start {align-items: start;}
-   .grid-xxl-align-items-end {align-items: end;}
-   .grid-xxl-align-items-center {align-items: center;}
-   .grid-xxl-align-items-stretch {align-items: stretch;}
+   .grid-xxl-alitems-start {align-items: start;}
+   .grid-xxl-alitems-end {align-items: end;}
+   .grid-xxl-alitems-center {align-items: center;}
+   .grid-xxl-alitems-stretch {align-items: stretch;}
 
-   .grid-xxl-align-content-start {align-content: start;}
-   .grid-xxl-align-content-end {align-content: end;}
-   .grid-xxl-align-content-center {align-content: center;}
-   .grid-xxl-align-content-stretch {align-content: stretch;}
-   .grid-xxl-align-content-around {align-content: space-around;}
-   .grid-xxl-align-content-between {align-content: space-between;}
-   .grid-xxl-align-content-evenly {align-content: space-evenly;}
+   .grid-xxl-alicon-start {align-content: start;}
+   .grid-xxl-alicon-end {align-content: end;}
+   .grid-xxl-alicon-center {align-content: center;}
+   .grid-xxl-alicon-stretch {align-content: stretch;}
+   .grid-xxl-alicon-around {align-content: space-around;}
+   .grid-xxl-alicon-between {align-content: space-between;}
+   .grid-xxl-alicon-evenly {align-content: space-evenly;}
 
    /* Grid Item */
-   .grid-xxl-justify-self-start {justify-self: start;}
-   .grid-xxl-justify-self-end {justify-self: end;}
-   .grid-xxl-justify-self-center {justify-self: center;}
-   .grid-xxl-justify-self-stretch {justify-self: stretch;}
+   .grid-xxl-jusself-start {justify-self: start;}
+   .grid-xxl-jusself-end {justify-self: end;}
+   .grid-xxl-jusself-center {justify-self: center;}
+   .grid-xxl-jusself-stretch {justify-self: stretch;}
 
-   .grid-xxl-align-self-start {align-self: start;}
-   .grid-xxl-align-self-end {align-self: end;}
-   .grid-xxl-align-self-center {align-self: center;}
-   .grid-xxl-align-self-stretch {align-self: stretch;}
+   .grid-xxl-aliself-start {align-self: start;}
+   .grid-xxl-aliself-end {align-self: end;}
+   .grid-xxl-aliself-center {align-self: center;}
+   .grid-xxl-aliself-stretch {align-self: stretch;}
+
+   /* Grid Columns and Gaps */
+   .grid-xxl-cols-1 {grid-template-columns: 1fr;}
+   .grid-xxl-cols-2 {grid-template-columns: repeat(2, 1fr);}
+   .grid-xxl-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+   .grid-xxl-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+   .grid-xxl-cols-6 {grid-template-columns: repeat(6, 1fr);;}
+
+   .grid-xxl-gap-1r {grid-gap: 1rem;}
+   .grid-xxl-gap-2r {grid-gap: 2rem;}
+   .grid-xxl-gap-3r {grid-gap: 3rem;}
+   .grid-xxl-gap-4r {grid-gap: 4rem;}
+   .grid-xxl-gap-5r {grid-gap: 5rem;}
+
+   .grid-xxl-gap-col-1r {grid-column-gap: 1rem;}
+   .grid-xxl-gap-col-2r {grid-column-gap: 2rem;}
+   .grid-xxl-gap-col-3r {grid-column-gap: 3rem;}
+   .grid-xxl-gap-col-4r {grid-column-gap: 4rem;}
+   .grid-xxl-gap-col-5r {grid-column-gap: 5rem;}
+
+   .grid-xxl-gap-row-1r {grid-row-gap: 1rem;}
+   .grid-xxl-gap-row-2r {grid-row-gap: 2rem;}
+   .grid-xxl-gap-row-3r {grid-row-gap: 3rem;}
+   .grid-xxl-gap-row-4r {grid-row-gap: 4rem;}
+   .grid-xxl-gap-row-5r {grid-row-gap: 5rem;}
 
    /* SVG */
    .svg-xxl-fluid svg {width: 100%;}
@@ -1732,8 +1779,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
    .flex-xl-row {flex-direction: row;}
    .flex-xl-row-reverse {flex-direction: row-reverse;}
-   .flex-xl-column {flex-direction: column;}
-   .flex-xl-column-reverse {flex-direction: column-reverse;}
+   .flex-xl-col {flex-direction: column;}
+   .flex-xl-col-reverse {flex-direction: column-reverse;}
 
    .flex-xl-nowrap {flex-wrap: nowrap;}
    .flex-xl-wrap {flex-wrap: wrap;}
@@ -1742,8 +1789,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xl-juscon-start {justify-content: flex-start;}
    .flex-xl-juscon-end {justify-content: flex-end;}
    .flex-xl-juscon-center {justify-content: center;}
-   .flex-xl-juscon-space-between {justify-content: space-between;}
-   .flex-xl-juscon-space-around {justify-content: space-around;}
+   .flex-xl-juscon-between {justify-content: space-between;}
+   .flex-xl-juscon-around {justify-content: space-around;}
 
    .flex-xl-alitems-start {align-items: flex-start;}
    .flex-xl-alitems-end {align-items: flex-end;}
@@ -1751,12 +1798,12 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xl-alitems-baseline {align-items: baseline;}
    .flex-xl-alitems-stretch {align-items: stretch;}
 
-   .flex-xl-alicontent-start {align-content: flex-start;}
-   .flex-xl-alicontent-end {align-content: flex-end;}
-   .flex-xl-alicontent-center {align-content: center;}
-   .flex-xl-alicontent-space-between {align-content: space-between;}
-   .flex-xl-alicontent-space-around {align-content: space-around;}
-   .flex-xl-alicontent-stretch {align-content: stretch;}
+   .flex-xl-alicon-start {align-content: flex-start;}
+   .flex-xl-alicon-end {align-content: flex-end;}
+   .flex-xl-alicon-center {align-content: center;}
+   .flex-xl-alicon-between {align-content: space-between;}
+   .flex-xl-alicon-around {align-content: space-around;}
+   .flex-xl-alicon-stretch {align-content: stretch;}
 
    /* Flexbox Items */
    .flexitem-xl-order {order: 0;}
@@ -1780,42 +1827,67 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    /* Grid Container */
    .grid-xl {display: grid;}
 
-   .grid-xl-justify-items-start {justify-items: start;}
-   .grid-xl-justify-items-end {justify-items: end;}
-   .grid-xl-justify-items-center {justify-items: center;}
-   .grid-xl-justify-items-stretch {justify-items: stretch;}
+   .grid-xl-jusitems-start {justify-items: start;}
+   .grid-xl-jusitems-end {justify-items: end;}
+   .grid-xl-jusitems-center {justify-items: center;}
+   .grid-xl-jusitems-stretch {justify-items: stretch;}
 
-   .grid-xl-justify-content-start {justify-content: start;}
-   .grid-xl-justify-content-end {justify-content: end;}
-   .grid-xl-justify-content-center {justify-content: center;}
-   .grid-xl-justify-content-stretch {justify-content: stretch;}
-   .grid-xl-justify-content-around {justify-content: space-around;}
-   .grid-xl-justify-content-between {justify-content: space-between;}
-   .grid-xl-justify-content-evenly {justify-content: space-evenly;}
+   .grid-xl-juscon-start {justify-content: start;}
+   .grid-xl-juscon-end {justify-content: end;}
+   .grid-xl-juscon-center {justify-content: center;}
+   .grid-xl-juscon-stretch {justify-content: stretch;}
+   .grid-xl-juscon-around {justify-content: space-around;}
+   .grid-xl-juscon-between {justify-content: space-between;}
+   .grid-xl-juscon-evenly {justify-content: space-evenly;}
 
-   .grid-xl-align-items-start {align-items: start;}
-   .grid-xl-align-items-end {align-items: end;}
-   .grid-xl-align-items-center {align-items: center;}
-   .grid-xl-align-items-stretch {align-items: stretch;}
+   .grid-xl-alitems-start {align-items: start;}
+   .grid-xl-alitems-end {align-items: end;}
+   .grid-xl-alitems-center {align-items: center;}
+   .grid-xl-alitems-stretch {align-items: stretch;}
 
-   .grid-xl-align-content-start {align-content: start;}
-   .grid-xl-align-content-end {align-content: end;}
-   .grid-xl-align-content-center {align-content: center;}
-   .grid-xl-align-content-stretch {align-content: stretch;}
-   .grid-xl-align-content-around {align-content: space-around;}
-   .grid-xl-align-content-between {align-content: space-between;}
-   .grid-xl-align-content-evenly {align-content: space-evenly;}
+   .grid-xl-alicon-start {align-content: start;}
+   .grid-xl-alicon-end {align-content: end;}
+   .grid-xl-alicon-center {align-content: center;}
+   .grid-xl-alicon-stretch {align-content: stretch;}
+   .grid-xl-alicon-around {align-content: space-around;}
+   .grid-xl-alicon-between {align-content: space-between;}
+   .grid-xl-alicon-evenly {align-content: space-evenly;}
 
    /* Grid Item */
-   .grid-xl-justify-self-start {justify-self: start;}
-   .grid-xl-justify-self-end {justify-self: end;}
-   .grid-xl-justify-self-center {justify-self: center;}
-   .grid-xl-justify-self-stretch {justify-self: stretch;}
+   .grid-xl-jusself-start {justify-self: start;}
+   .grid-xl-jusself-end {justify-self: end;}
+   .grid-xl-jusself-center {justify-self: center;}
+   .grid-xl-jusself-stretch {justify-self: stretch;}
 
-   .grid-xl-align-self-start {align-self: start;}
-   .grid-xl-align-self-end {align-self: end;}
-   .grid-xl-align-self-center {align-self: center;}
-   .grid-xl-align-self-stretch {align-self: stretch;}
+   .grid-xl-aliself-start {align-self: start;}
+   .grid-xl-aliself-end {align-self: end;}
+   .grid-xl-aliself-center {align-self: center;}
+   .grid-xl-aliself-stretch {align-self: stretch;}
+
+   /* Grid Columns and Gaps */
+   .grid-xl-cols-1 {grid-template-columns: 1fr;}
+   .grid-xl-cols-2 {grid-template-columns: repeat(2, 1fr);}
+   .grid-xl-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+   .grid-xl-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+   .grid-xl-cols-6 {grid-template-columns: repeat(6, 1fr);;}
+
+   .grid-xl-gap-1r {grid-gap: 1rem;}
+   .grid-xl-gap-2r {grid-gap: 2rem;}
+   .grid-xl-gap-3r {grid-gap: 3rem;}
+   .grid-xl-gap-4r {grid-gap: 4rem;}
+   .grid-xl-gap-5r {grid-gap: 5rem;}
+
+   .grid-xl-gap-col-1r {grid-column-gap: 1rem;}
+   .grid-xl-gap-col-2r {grid-column-gap: 2rem;}
+   .grid-xl-gap-col-3r {grid-column-gap: 3rem;}
+   .grid-xl-gap-col-4r {grid-column-gap: 4rem;}
+   .grid-xl-gap-col-5r {grid-column-gap: 5rem;}
+
+   .grid-xl-gap-row-1r {grid-row-gap: 1rem;}
+   .grid-xl-gap-row-2r {grid-row-gap: 2rem;}
+   .grid-xl-gap-row-3r {grid-row-gap: 3rem;}
+   .grid-xl-gap-row-4r {grid-row-gap: 4rem;}
+   .grid-xl-gap-row-5r {grid-row-gap: 5rem;}
 
    /* SVG */
    .svg-xl-fluid svg {width: 100%;}
@@ -2224,8 +2296,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
    .flex-l-row {flex-direction: row;}
    .flex-l-row-reverse {flex-direction: row-reverse;}
-   .flex-l-column {flex-direction: column;}
-   .flex-l-column-reverse {flex-direction: column-reverse;}
+   .flex-l-col {flex-direction: column;}
+   .flex-l-col-reverse {flex-direction: column-reverse;}
 
    .flex-l-nowrap {flex-wrap: nowrap;}
    .flex-l-wrap {flex-wrap: wrap;}
@@ -2234,8 +2306,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-l-juscon-start {justify-content: flex-start;}
    .flex-l-juscon-end {justify-content: flex-end;}
    .flex-l-juscon-center {justify-content: center;}
-   .flex-l-juscon-space-between {justify-content: space-between;}
-   .flex-l-juscon-space-around {justify-content: space-around;}
+   .flex-l-juscon-between {justify-content: space-between;}
+   .flex-l-juscon-around {justify-content: space-around;}
 
    .flex-l-alitems-start {align-items: flex-start;}
    .flex-l-alitems-end {align-items: flex-end;}
@@ -2243,12 +2315,12 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-l-alitems-baseline {align-items: baseline;}
    .flex-l-alitems-stretch {align-items: stretch;}
 
-   .flex-l-alicontent-start {align-content: flex-start;}
-   .flex-l-alicontent-end {align-content: flex-end;}
-   .flex-l-alicontent-center {align-content: center;}
-   .flex-l-alicontent-space-between {align-content: space-between;}
-   .flex-l-alicontent-space-around {align-content: space-around;}
-   .flex-l-alicontent-stretch {align-content: stretch;}
+   .flex-l-alicon-start {align-content: flex-start;}
+   .flex-l-alicon-end {align-content: flex-end;}
+   .flex-l-alicon-center {align-content: center;}
+   .flex-l-alicon-between {align-content: space-between;}
+   .flex-l-alicon-around {align-content: space-around;}
+   .flex-l-alicon-stretch {align-content: stretch;}
 
    /* Flexbox Items */
    .flexitem-l-order {order: 0;}
@@ -2272,42 +2344,67 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    /* Grid Container */
    .grid-l {display: grid;}
 
-   .grid-l-justify-items-start {justify-items: start;}
-   .grid-l-justify-items-end {justify-items: end;}
-   .grid-l-justify-items-center {justify-items: center;}
-   .grid-l-justify-items-stretch {justify-items: stretch;}
+   .grid-l-jusitems-start {justify-items: start;}
+   .grid-l-jusitems-end {justify-items: end;}
+   .grid-l-jusitems-center {justify-items: center;}
+   .grid-l-jusitems-stretch {justify-items: stretch;}
 
-   .grid-l-justify-content-start {justify-content: start;}
-   .grid-l-justify-content-end {justify-content: end;}
-   .grid-l-justify-content-center {justify-content: center;}
-   .grid-l-justify-content-stretch {justify-content: stretch;}
-   .grid-l-justify-content-around {justify-content: space-around;}
-   .grid-l-justify-content-between {justify-content: space-between;}
-   .grid-l-justify-content-evenly {justify-content: space-evenly;}
+   .grid-l-juscon-start {justify-content: start;}
+   .grid-l-juscon-end {justify-content: end;}
+   .grid-l-juscon-center {justify-content: center;}
+   .grid-l-juscon-stretch {justify-content: stretch;}
+   .grid-l-juscon-around {justify-content: space-around;}
+   .grid-l-juscon-between {justify-content: space-between;}
+   .grid-l-juscon-evenly {justify-content: space-evenly;}
 
-   .grid-l-align-items-start {align-items: start;}
-   .grid-l-align-items-end {align-items: end;}
-   .grid-l-align-items-center {align-items: center;}
-   .grid-l-align-items-stretch {align-items: stretch;}
+   .grid-l-alitems-start {align-items: start;}
+   .grid-l-alitems-end {align-items: end;}
+   .grid-l-alitems-center {align-items: center;}
+   .grid-l-alitems-stretch {align-items: stretch;}
 
-   .grid-l-align-content-start {align-content: start;}
-   .grid-l-align-content-end {align-content: end;}
-   .grid-l-align-content-center {align-content: center;}
-   .grid-l-align-content-stretch {align-content: stretch;}
-   .grid-l-align-content-around {align-content: space-around;}
-   .grid-l-align-content-between {align-content: space-between;}
-   .grid-l-align-content-evenly {align-content: space-evenly;}
+   .grid-l-alicon-start {align-content: start;}
+   .grid-l-alicon-end {align-content: end;}
+   .grid-l-alicon-center {align-content: center;}
+   .grid-l-alicon-stretch {align-content: stretch;}
+   .grid-l-alicon-around {align-content: space-around;}
+   .grid-l-alicon-between {align-content: space-between;}
+   .grid-l-alicon-evenly {align-content: space-evenly;}
 
    /* Grid Item */
-   .grid-l-justify-self-start {justify-self: start;}
-   .grid-l-justify-self-end {justify-self: end;}
-   .grid-l-justify-self-center {justify-self: center;}
-   .grid-l-justify-self-stretch {justify-self: stretch;}
+   .grid-l-jusself-start {justify-self: start;}
+   .grid-l-jusself-end {justify-self: end;}
+   .grid-l-jusself-center {justify-self: center;}
+   .grid-l-jusself-stretch {justify-self: stretch;}
 
-   .grid-l-align-self-start {align-self: start;}
-   .grid-l-align-self-end {align-self: end;}
-   .grid-l-align-self-center {align-self: center;}
-   .grid-l-align-self-stretch {align-self: stretch;}
+   .grid-l-aliself-start {align-self: start;}
+   .grid-l-aliself-end {align-self: end;}
+   .grid-l-aliself-center {align-self: center;}
+   .grid-l-aliself-stretch {align-self: stretch;}
+
+   /* Grid Columns and Gaps */
+   .grid-l-cols-1 {grid-template-columns: 1fr;}
+   .grid-l-cols-2 {grid-template-columns: repeat(2, 1fr);}
+   .grid-l-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+   .grid-l-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+   .grid-l-cols-6 {grid-template-columns: repeat(6, 1fr);;}
+
+   .grid-l-gap-1r {grid-gap: 1rem;}
+   .grid-l-gap-2r {grid-gap: 2rem;}
+   .grid-l-gap-3r {grid-gap: 3rem;}
+   .grid-l-gap-4r {grid-gap: 4rem;}
+   .grid-l-gap-5r {grid-gap: 5rem;}
+
+   .grid-l-gap-col-1r {grid-column-gap: 1rem;}
+   .grid-l-gap-col-2r {grid-column-gap: 2rem;}
+   .grid-l-gap-col-3r {grid-column-gap: 3rem;}
+   .grid-l-gap-col-4r {grid-column-gap: 4rem;}
+   .grid-l-gap-col-5r {grid-column-gap: 5rem;}
+
+   .grid-l-gap-row-1r {grid-row-gap: 1rem;}
+   .grid-l-gap-row-2r {grid-row-gap: 2rem;}
+   .grid-l-gap-row-3r {grid-row-gap: 3rem;}
+   .grid-l-gap-row-4r {grid-row-gap: 4rem;}
+   .grid-l-gap-row-5r {grid-row-gap: 5rem;}
 
    /* SVG */
    .svg-l-fluid svg {width: 100%;}
@@ -2718,8 +2815,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
    .flex-m-row {flex-direction: row;}
    .flex-m-row-reverse {flex-direction: row-reverse;}
-   .flex-m-column {flex-direction: column;}
-   .flex-m-column-reverse {flex-direction: column-reverse;}
+   .flex-m-col {flex-direction: column;}
+   .flex-m-col-reverse {flex-direction: column-reverse;}
 
    .flex-m-nowrap {flex-wrap: nowrap;}
    .flex-m-wrap {flex-wrap: wrap;}
@@ -2728,8 +2825,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-m-juscon-start {justify-content: flex-start;}
    .flex-m-juscon-end {justify-content: flex-end;}
    .flex-m-juscon-center {justify-content: center;}
-   .flex-m-juscon-space-between {justify-content: space-between;}
-   .flex-m-juscon-space-around {justify-content: space-around;}
+   .flex-m-juscon-between {justify-content: space-between;}
+   .flex-m-juscon-around {justify-content: space-around;}
 
    .flex-m-alitems-start {align-items: flex-start;}
    .flex-m-alitems-end {align-items: flex-end;}
@@ -2737,12 +2834,12 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-m-alitems-baseline {align-items: baseline;}
    .flex-m-alitems-stretch {align-items: stretch;}
 
-   .flex-m-alicontent-start {align-content: flex-start;}
-   .flex-m-alicontent-end {align-content: flex-end;}
-   .flex-m-alicontent-center {align-content: center;}
-   .flex-m-alicontent-space-between {align-content: space-between;}
-   .flex-m-alicontent-space-around {align-content: space-around;}
-   .flex-m-alicontent-stretch {align-content: stretch;}
+   .flex-m-alicon-start {align-content: flex-start;}
+   .flex-m-alicon-end {align-content: flex-end;}
+   .flex-m-alicon-center {align-content: center;}
+   .flex-m-alicon-between {align-content: space-between;}
+   .flex-m-alicon-around {align-content: space-around;}
+   .flex-m-alicon-stretch {align-content: stretch;}
 
    /* Flexbox Items */
    .flexitem-m-order {order: 0;}
@@ -2766,42 +2863,67 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    /* Grid Container */
    .grid-m {display: grid;}
 
-   .grid-m-justify-items-start {justify-items: start;}
-   .grid-m-justify-items-end {justify-items: end;}
-   .grid-m-justify-items-center {justify-items: center;}
-   .grid-m-justify-items-stretch {justify-items: stretch;}
+   .grid-m-jusitems-start {justify-items: start;}
+   .grid-m-jusitems-end {justify-items: end;}
+   .grid-m-jusitems-center {justify-items: center;}
+   .grid-m-jusitems-stretch {justify-items: stretch;}
 
-   .grid-m-justify-content-start {justify-content: start;}
-   .grid-m-justify-content-end {justify-content: end;}
-   .grid-m-justify-content-center {justify-content: center;}
-   .grid-m-justify-content-stretch {justify-content: stretch;}
-   .grid-m-justify-content-around {justify-content: space-around;}
-   .grid-m-justify-content-between {justify-content: space-between;}
-   .grid-m-justify-content-evenly {justify-content: space-evenly;}
+   .grid-m-juscon-start {justify-content: start;}
+   .grid-m-juscon-end {justify-content: end;}
+   .grid-m-juscon-center {justify-content: center;}
+   .grid-m-juscon-stretch {justify-content: stretch;}
+   .grid-m-juscon-around {justify-content: space-around;}
+   .grid-m-juscon-between {justify-content: space-between;}
+   .grid-m-juscon-evenly {justify-content: space-evenly;}
 
-   .grid-m-align-items-start {align-items: start;}
-   .grid-m-align-items-end {align-items: end;}
-   .grid-m-align-items-center {align-items: center;}
-   .grid-m-align-items-stretch {align-items: stretch;}
+   .grid-m-alitems-start {align-items: start;}
+   .grid-m-alitems-end {align-items: end;}
+   .grid-m-alitems-center {align-items: center;}
+   .grid-m-alitems-stretch {align-items: stretch;}
 
-   .grid-m-align-content-start {align-content: start;}
-   .grid-m-align-content-end {align-content: end;}
-   .grid-m-align-content-center {align-content: center;}
-   .grid-m-align-content-stretch {align-content: stretch;}
-   .grid-m-align-content-around {align-content: space-around;}
-   .grid-m-align-content-between {align-content: space-between;}
-   .grid-m-align-content-evenly {align-content: space-evenly;}
+   .grid-m-alicon-start {align-content: start;}
+   .grid-m-alicon-end {align-content: end;}
+   .grid-m-alicon-center {align-content: center;}
+   .grid-m-alicon-stretch {align-content: stretch;}
+   .grid-m-alicon-around {align-content: space-around;}
+   .grid-m-alicon-between {align-content: space-between;}
+   .grid-m-alicon-evenly {align-content: space-evenly;}
 
    /* Grid Item */
-   .grid-m-justify-self-start {justify-self: start;}
-   .grid-m-justify-self-end {justify-self: end;}
-   .grid-m-justify-self-center {justify-self: center;}
-   .grid-m-justify-self-stretch {justify-self: stretch;}
+   .grid-m-jusself-start {justify-self: start;}
+   .grid-m-jusself-end {justify-self: end;}
+   .grid-m-jusself-center {justify-self: center;}
+   .grid-m-jusself-stretch {justify-self: stretch;}
 
-   .grid-m-align-self-start {align-self: start;}
-   .grid-m-align-self-end {align-self: end;}
-   .grid-m-align-self-center {align-self: center;}
-   .grid-m-align-self-stretch {align-self: stretch;}
+   .grid-m-aliself-start {align-self: start;}
+   .grid-m-aliself-end {align-self: end;}
+   .grid-m-aliself-center {align-self: center;}
+   .grid-m-aliself-stretch {align-self: stretch;}
+
+   /* Grid Columns and Gaps */
+   .grid-m-cols-1 {grid-template-columns: 1fr;}
+   .grid-m-cols-2 {grid-template-columns: repeat(2, 1fr);}
+   .grid-m-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+   .grid-m-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+   .grid-m-cols-6 {grid-template-columns: repeat(6, 1fr);;}
+
+   .grid-m-gap-1r {grid-gap: 1rem;}
+   .grid-m-gap-2r {grid-gap: 2rem;}
+   .grid-m-gap-3r {grid-gap: 3rem;}
+   .grid-m-gap-4r {grid-gap: 4rem;}
+   .grid-m-gap-5r {grid-gap: 5rem;}
+
+   .grid-m-gap-col-1r {grid-column-gap: 1rem;}
+   .grid-m-gap-col-2r {grid-column-gap: 2rem;}
+   .grid-m-gap-col-3r {grid-column-gap: 3rem;}
+   .grid-m-gap-col-4r {grid-column-gap: 4rem;}
+   .grid-m-gap-col-5r {grid-column-gap: 5rem;}
+
+   .grid-m-gap-row-1r {grid-row-gap: 1rem;}
+   .grid-m-gap-row-2r {grid-row-gap: 2rem;}
+   .grid-m-gap-row-3r {grid-row-gap: 3rem;}
+   .grid-m-gap-row-4r {grid-row-gap: 4rem;}
+   .grid-m-gap-row-5r {grid-row-gap: 5rem;}
 
    /* SVG */
    .svg-m-fluid svg {width: 100%;}
@@ -3209,8 +3331,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
    .flex-s-row {flex-direction: row;}
    .flex-s-row-reverse {flex-direction: row-reverse;}
-   .flex-s-column {flex-direction: column;}
-   .flex-s-column-reverse {flex-direction: column-reverse;}
+   .flex-s-col {flex-direction: column;}
+   .flex-s-col-reverse {flex-direction: column-reverse;}
 
    .flex-s-nowrap {flex-wrap: nowrap;}
    .flex-s-wrap {flex-wrap: wrap;}
@@ -3219,8 +3341,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-s-juscon-start {justify-content: flex-start;}
    .flex-s-juscon-end {justify-content: flex-end;}
    .flex-s-juscon-center {justify-content: center;}
-   .flex-s-juscon-space-between {justify-content: space-between;}
-   .flex-s-juscon-space-around {justify-content: space-around;}
+   .flex-s-juscon-between {justify-content: space-between;}
+   .flex-s-juscon-around {justify-content: space-around;}
 
    .flex-s-alitems-start {align-items: flex-start;}
    .flex-s-alitems-end {align-items: flex-end;}
@@ -3228,12 +3350,12 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-s-alitems-baseline {align-items: baseline;}
    .flex-s-alitems-stretch {align-items: stretch;}
 
-   .flex-s-alicontent-start {align-content: flex-start;}
-   .flex-s-alicontent-end {align-content: flex-end;}
-   .flex-s-alicontent-center {align-content: center;}
-   .flex-s-alicontent-space-between {align-content: space-between;}
-   .flex-s-alicontent-space-around {align-content: space-around;}
-   .flex-s-alicontent-stretch {align-content: stretch;}
+   .flex-s-alicon-start {align-content: flex-start;}
+   .flex-s-alicon-end {align-content: flex-end;}
+   .flex-s-alicon-center {align-content: center;}
+   .flex-s-alicon-between {align-content: space-between;}
+   .flex-s-alicon-around {align-content: space-around;}
+   .flex-s-alicon-stretch {align-content: stretch;}
 
    /* Flexbox Items */
    .flexitem-s-order {order: 0;}
@@ -3257,42 +3379,67 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    /* Grid Container */
    .grid-s {display: grid;}
 
-   .grid-s-justify-items-start {justify-items: start;}
-   .grid-s-justify-items-end {justify-items: end;}
-   .grid-s-justify-items-center {justify-items: center;}
-   .grid-s-justify-items-stretch {justify-items: stretch;}
+   .grid-s-jusitems-start {justify-items: start;}
+   .grid-s-jusitems-end {justify-items: end;}
+   .grid-s-jusitems-center {justify-items: center;}
+   .grid-s-jusitems-stretch {justify-items: stretch;}
 
-   .grid-s-justify-content-start {justify-content: start;}
-   .grid-s-justify-content-end {justify-content: end;}
-   .grid-s-justify-content-center {justify-content: center;}
-   .grid-s-justify-content-stretch {justify-content: stretch;}
-   .grid-s-justify-content-around {justify-content: space-around;}
-   .grid-s-justify-content-between {justify-content: space-between;}
-   .grid-s-justify-content-evenly {justify-content: space-evenly;}
+   .grid-s-juscon-start {justify-content: start;}
+   .grid-s-juscon-end {justify-content: end;}
+   .grid-s-juscon-center {justify-content: center;}
+   .grid-s-juscon-stretch {justify-content: stretch;}
+   .grid-s-juscon-around {justify-content: space-around;}
+   .grid-s-juscon-between {justify-content: space-between;}
+   .grid-s-juscon-evenly {justify-content: space-evenly;}
 
-   .grid-s-align-items-start {align-items: start;}
-   .grid-s-align-items-end {align-items: end;}
-   .grid-s-align-items-center {align-items: center;}
-   .grid-s-align-items-stretch {align-items: stretch;}
+   .grid-s-alitems-start {align-items: start;}
+   .grid-s-alitems-end {align-items: end;}
+   .grid-s-alitems-center {align-items: center;}
+   .grid-s-alitems-stretch {align-items: stretch;}
 
-   .grid-s-align-content-start {align-content: start;}
-   .grid-s-align-content-end {align-content: end;}
-   .grid-s-align-content-center {align-content: center;}
-   .grid-s-align-content-stretch {align-content: stretch;}
-   .grid-s-align-content-around {align-content: space-around;}
-   .grid-s-align-content-between {align-content: space-between;}
-   .grid-s-align-content-evenly {align-content: space-evenly;}
+   .grid-s-alicon-start {align-content: start;}
+   .grid-s-alicon-end {align-content: end;}
+   .grid-s-alicon-center {align-content: center;}
+   .grid-s-alicon-stretch {align-content: stretch;}
+   .grid-s-alicon-around {align-content: space-around;}
+   .grid-s-alicon-between {align-content: space-between;}
+   .grid-s-alicon-evenly {align-content: space-evenly;}
 
    /* Grid Item */
-   .grid-s-justify-self-start {justify-self: start;}
-   .grid-s-justify-self-end {justify-self: end;}
-   .grid-s-justify-self-center {justify-self: center;}
-   .grid-s-justify-self-stretch {justify-self: stretch;}
+   .grid-s-jusself-start {justify-self: start;}
+   .grid-s-jusself-end {justify-self: end;}
+   .grid-s-jusself-center {justify-self: center;}
+   .grid-s-jusself-stretch {justify-self: stretch;}
 
-   .grid-s-align-self-start {align-self: start;}
-   .grid-s-align-self-end {align-self: end;}
-   .grid-s-align-self-center {align-self: center;}
-   .grid-s-align-self-stretch {align-self: stretch;}
+   .grid-s-aliself-start {align-self: start;}
+   .grid-s-aliself-end {align-self: end;}
+   .grid-s-aliself-center {align-self: center;}
+   .grid-s-aliself-stretch {align-self: stretch;}
+
+   /* Grid Columns and Gaps */
+   .grid-s-cols-1 {grid-template-columns: 1fr;}
+   .grid-s-cols-2 {grid-template-columns: repeat(2, 1fr);}
+   .grid-s-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+   .grid-s-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+   .grid-s-cols-6 {grid-template-columns: repeat(6, 1fr);;}
+
+   .grid-s-gap-1r {grid-gap: 1rem;}
+   .grid-s-gap-2r {grid-gap: 2rem;}
+   .grid-s-gap-3r {grid-gap: 3rem;}
+   .grid-s-gap-4r {grid-gap: 4rem;}
+   .grid-s-gap-5r {grid-gap: 5rem;}
+
+   .grid-s-gap-col-1r {grid-column-gap: 1rem;}
+   .grid-s-gap-col-2r {grid-column-gap: 2rem;}
+   .grid-s-gap-col-3r {grid-column-gap: 3rem;}
+   .grid-s-gap-col-4r {grid-column-gap: 4rem;}
+   .grid-s-gap-col-5r {grid-column-gap: 5rem;}
+
+   .grid-s-gap-row-1r {grid-row-gap: 1rem;}
+   .grid-s-gap-row-2r {grid-row-gap: 2rem;}
+   .grid-s-gap-row-3r {grid-row-gap: 3rem;}
+   .grid-s-gap-row-4r {grid-row-gap: 4rem;}
+   .grid-s-gap-row-5r {grid-row-gap: 5rem;}
 
    /* SVG */
    .svg-s-fluid svg {width: 100%;}
@@ -3701,8 +3848,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
    .flex-xs-row {flex-direction: row;}
    .flex-xs-row-reverse {flex-direction: row-reverse;}
-   .flex-xs-column {flex-direction: column;}
-   .flex-xs-column-reverse {flex-direction: column-reverse;}
+   .flex-xs-col {flex-direction: column;}
+   .flex-xs-col-reverse {flex-direction: column-reverse;}
 
    .flex-xs-nowrap {flex-wrap: nowrap;}
    .flex-xs-wrap {flex-wrap: wrap;}
@@ -3711,8 +3858,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xs-juscon-start {justify-content: flex-start;}
    .flex-xs-juscon-end {justify-content: flex-end;}
    .flex-xs-juscon-center {justify-content: center;}
-   .flex-xs-juscon-space-between {justify-content: space-between;}
-   .flex-xs-juscon-space-around {justify-content: space-around;}
+   .flex-xs-juscon-between {justify-content: space-between;}
+   .flex-xs-juscon-around {justify-content: space-around;}
 
    .flex-xs-alitems-start {align-items: flex-start;}
    .flex-xs-alitems-end {align-items: flex-end;}
@@ -3720,12 +3867,12 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xs-alitems-baseline {align-items: baseline;}
    .flex-xs-alitems-stretch {align-items: stretch;}
 
-   .flex-xs-alicontent-start {align-content: flex-start;}
-   .flex-xs-alicontent-end {align-content: flex-end;}
-   .flex-xs-alicontent-center {align-content: center;}
-   .flex-xs-alicontent-space-between {align-content: space-between;}
-   .flex-xs-alicontent-space-around {align-content: space-around;}
-   .flex-xs-alicontent-stretch {align-content: stretch;}
+   .flex-xs-alicon-start {align-content: flex-start;}
+   .flex-xs-alicon-end {align-content: flex-end;}
+   .flex-xs-alicon-center {align-content: center;}
+   .flex-xs-alicon-between {align-content: space-between;}
+   .flex-xs-alicon-around {align-content: space-around;}
+   .flex-xs-alicon-stretch {align-content: stretch;}
 
    /* Flexbox Items */
    .flexitem-xs-order {order: 0;}
@@ -3749,42 +3896,67 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    /* Grid Container */
    .grid-xs {display: grid;}
 
-   .grid-xs-justify-items-start {justify-items: start;}
-   .grid-xs-justify-items-end {justify-items: end;}
-   .grid-xs-justify-items-center {justify-items: center;}
-   .grid-xs-justify-items-stretch {justify-items: stretch;}
+   .grid-xs-jusitems-start {justify-items: start;}
+   .grid-xs-jusitems-end {justify-items: end;}
+   .grid-xs-jusitems-center {justify-items: center;}
+   .grid-xs-jusitems-stretch {justify-items: stretch;}
 
-   .grid-xs-justify-content-start {justify-content: start;}
-   .grid-xs-justify-content-end {justify-content: end;}
-   .grid-xs-justify-content-center {justify-content: center;}
-   .grid-xs-justify-content-stretch {justify-content: stretch;}
-   .grid-xs-justify-content-around {justify-content: space-around;}
-   .grid-xs-justify-content-between {justify-content: space-between;}
-   .grid-xs-justify-content-evenly {justify-content: space-evenly;}
+   .grid-xs-juscon-start {justify-content: start;}
+   .grid-xs-juscon-end {justify-content: end;}
+   .grid-xs-juscon-center {justify-content: center;}
+   .grid-xs-juscon-stretch {justify-content: stretch;}
+   .grid-xs-juscon-around {justify-content: space-around;}
+   .grid-xs-juscon-between {justify-content: space-between;}
+   .grid-xs-juscon-evenly {justify-content: space-evenly;}
 
-   .grid-xs-align-items-start {align-items: start;}
-   .grid-xs-align-items-end {align-items: end;}
-   .grid-xs-align-items-center {align-items: center;}
-   .grid-xs-align-items-stretch {align-items: stretch;}
+   .grid-xs-alitems-start {align-items: start;}
+   .grid-xs-alitems-end {align-items: end;}
+   .grid-xs-alitems-center {align-items: center;}
+   .grid-xs-alitems-stretch {align-items: stretch;}
 
-   .grid-xs-align-content-start {align-content: start;}
-   .grid-xs-align-content-end {align-content: end;}
-   .grid-xs-align-content-center {align-content: center;}
-   .grid-xs-align-content-stretch {align-content: stretch;}
-   .grid-xs-align-content-around {align-content: space-around;}
-   .grid-xs-align-content-between {align-content: space-between;}
-   .grid-xs-align-content-evenly {align-content: space-evenly;}
+   .grid-xs-alicon-start {align-content: start;}
+   .grid-xs-alicon-end {align-content: end;}
+   .grid-xs-alicon-center {align-content: center;}
+   .grid-xs-alicon-stretch {align-content: stretch;}
+   .grid-xs-alicon-around {align-content: space-around;}
+   .grid-xs-alicon-between {align-content: space-between;}
+   .grid-xs-alicon-evenly {align-content: space-evenly;}
 
    /* Grid Item */
-   .grid-xs-justify-self-start {justify-self: start;}
-   .grid-xs-justify-self-end {justify-self: end;}
-   .grid-xs-justify-self-center {justify-self: center;}
-   .grid-xs-justify-self-stretch {justify-self: stretch;}
+   .grid-xs-jusself-start {justify-self: start;}
+   .grid-xs-jusself-end {justify-self: end;}
+   .grid-xs-jusself-center {justify-self: center;}
+   .grid-xs-jusself-stretch {justify-self: stretch;}
 
-   .grid-xs-align-self-start {align-self: start;}
-   .grid-xs-align-self-end {align-self: end;}
-   .grid-xs-align-self-center {align-self: center;}
-   .grid-xs-align-self-stretch {align-self: stretch;}
+   .grid-xs-aliself-start {align-self: start;}
+   .grid-xs-aliself-end {align-self: end;}
+   .grid-xs-aliself-center {align-self: center;}
+   .grid-xs-aliself-stretch {align-self: stretch;}
+
+   /* Grid Columns and Gaps */
+   .grid-xs-cols-1 {grid-template-columns: 1fr;}
+   .grid-xs-cols-2 {grid-template-columns: repeat(2, 1fr);}
+   .grid-xs-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+   .grid-xs-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+   .grid-xs-cols-6 {grid-template-columns: repeat(6, 1fr);;}
+
+   .grid-xs-gap-1r {grid-gap: 1rem;}
+   .grid-xs-gap-2r {grid-gap: 2rem;}
+   .grid-xs-gap-3r {grid-gap: 3rem;}
+   .grid-xs-gap-4r {grid-gap: 4rem;}
+   .grid-xs-gap-5r {grid-gap: 5rem;}
+
+   .grid-xs-gap-col-1r {grid-column-gap: 1rem;}
+   .grid-xs-gap-col-2r {grid-column-gap: 2rem;}
+   .grid-xs-gap-col-3r {grid-column-gap: 3rem;}
+   .grid-xs-gap-col-4r {grid-column-gap: 4rem;}
+   .grid-xs-gap-col-5r {grid-column-gap: 5rem;}
+
+   .grid-xs-gap-row-1r {grid-row-gap: 1rem;}
+   .grid-xs-gap-row-2r {grid-row-gap: 2rem;}
+   .grid-xs-gap-row-3r {grid-row-gap: 3rem;}
+   .grid-xs-gap-row-4r {grid-row-gap: 4rem;}
+   .grid-xs-gap-row-5r {grid-row-gap: 5rem;}
 
    /* SVG */
    .svg-xs-fluid svg {width: 100%;}
@@ -4192,8 +4364,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
 
    .flex-xxs-row {flex-direction: row;}
    .flex-xxs-row-reverse {flex-direction: row-reverse;}
-   .flex-xxs-column {flex-direction: column;}
-   .flex-xxs-column-reverse {flex-direction: column-reverse;}
+   .flex-xxs-col {flex-direction: column;}
+   .flex-xxs-col-reverse {flex-direction: column-reverse;}
 
    .flex-xxs-nowrap {flex-wrap: nowrap;}
    .flex-xxs-wrap {flex-wrap: wrap;}
@@ -4202,8 +4374,8 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xxs-juscon-start {justify-content: flex-start;}
    .flex-xxs-juscon-end {justify-content: flex-end;}
    .flex-xxs-juscon-center {justify-content: center;}
-   .flex-xxs-juscon-space-between {justify-content: space-between;}
-   .flex-xxs-juscon-space-around {justify-content: space-around;}
+   .flex-xxs-juscon-between {justify-content: space-between;}
+   .flex-xxs-juscon-around {justify-content: space-around;}
 
    .flex-xxs-alitems-start {align-items: flex-start;}
    .flex-xxs-alitems-end {align-items: flex-end;}
@@ -4211,12 +4383,12 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    .flex-xxs-alitems-baseline {align-items: baseline;}
    .flex-xxs-alitems-stretch {align-items: stretch;}
 
-   .flex-xxs-alicontent-start {align-content: flex-start;}
-   .flex-xxs-alicontent-end {align-content: flex-end;}
-   .flex-xxs-alicontent-center {align-content: center;}
-   .flex-xxs-alicontent-space-between {align-content: space-between;}
-   .flex-xxs-alicontent-space-around {align-content: space-around;}
-   .flex-xxs-alicontent-stretch {align-content: stretch;}
+   .flex-xxs-alicon-start {align-content: flex-start;}
+   .flex-xxs-alicon-end {align-content: flex-end;}
+   .flex-xxs-alicon-center {align-content: center;}
+   .flex-xxs-alicon-between {align-content: space-between;}
+   .flex-xxs-alicon-around {align-content: space-around;}
+   .flex-xxs-alicon-stretch {align-content: stretch;}
 
    /* Flexbox Items */
    .flexitem-xxs-order {order: 0;}
@@ -4240,42 +4412,67 @@ img.lazyloaded {transition: opacity .4s linear .1s;opacity: 1;}
    /* Grid Container */
    .grid-xxs {display: grid;}
 
-   .grid-xxs-justify-items-start {justify-items: start;}
-   .grid-xxs-justify-items-end {justify-items: end;}
-   .grid-xxs-justify-items-center {justify-items: center;}
-   .grid-xxs-justify-items-stretch {justify-items: stretch;}
+   .grid-xxs-jusitems-start {justify-items: start;}
+   .grid-xxs-jusitems-end {justify-items: end;}
+   .grid-xxs-jusitems-center {justify-items: center;}
+   .grid-xxs-jusitems-stretch {justify-items: stretch;}
 
-   .grid-xxs-justify-content-start {justify-content: start;}
-   .grid-xxs-justify-content-end {justify-content: end;}
-   .grid-xxs-justify-content-center {justify-content: center;}
-   .grid-xxs-justify-content-stretch {justify-content: stretch;}
-   .grid-xxs-justify-content-around {justify-content: space-around;}
-   .grid-xxs-justify-content-between {justify-content: space-between;}
-   .grid-xxs-justify-content-evenly {justify-content: space-evenly;}
+   .grid-xxs-juscon-start {justify-content: start;}
+   .grid-xxs-juscon-end {justify-content: end;}
+   .grid-xxs-juscon-center {justify-content: center;}
+   .grid-xxs-juscon-stretch {justify-content: stretch;}
+   .grid-xxs-juscon-around {justify-content: space-around;}
+   .grid-xxs-juscon-between {justify-content: space-between;}
+   .grid-xxs-juscon-evenly {justify-content: space-evenly;}
 
-   .grid-xxs-align-items-start {align-items: start;}
-   .grid-xxs-align-items-end {align-items: end;}
-   .grid-xxs-align-items-center {align-items: center;}
-   .grid-xxs-align-items-stretch {align-items: stretch;}
+   .grid-xxs-alitems-start {align-items: start;}
+   .grid-xxs-alitems-end {align-items: end;}
+   .grid-xxs-alitems-center {align-items: center;}
+   .grid-xxs-alitems-stretch {align-items: stretch;}
 
-   .grid-xxs-align-content-start {align-content: start;}
-   .grid-xxs-align-content-end {align-content: end;}
-   .grid-xxs-align-content-center {align-content: center;}
-   .grid-xxs-align-content-stretch {align-content: stretch;}
-   .grid-xxs-align-content-around {align-content: space-around;}
-   .grid-xxs-align-content-between {align-content: space-between;}
-   .grid-xxs-align-content-evenly {align-content: space-evenly;}
+   .grid-xxs-alicon-start {align-content: start;}
+   .grid-xxs-alicon-end {align-content: end;}
+   .grid-xxs-alicon-center {align-content: center;}
+   .grid-xxs-alicon-stretch {align-content: stretch;}
+   .grid-xxs-alicon-around {align-content: space-around;}
+   .grid-xxs-alicon-between {align-content: space-between;}
+   .grid-xxs-alicon-evenly {align-content: space-evenly;}
 
    /* Grid Item */
-   .grid-xxs-justify-self-start {justify-self: start;}
-   .grid-xxs-justify-self-end {justify-self: end;}
-   .grid-xxs-justify-self-center {justify-self: center;}
-   .grid-xxs-justify-self-stretch {justify-self: stretch;}
+   .grid-xxs-jusself-start {justify-self: start;}
+   .grid-xxs-jusself-end {justify-self: end;}
+   .grid-xxs-jusself-center {justify-self: center;}
+   .grid-xxs-jusself-stretch {justify-self: stretch;}
 
-   .grid-xxs-align-self-start {align-self: start;}
-   .grid-xxs-align-self-end {align-self: end;}
-   .grid-xxs-align-self-center {align-self: center;}
-   .grid-xxs-align-self-stretch {align-self: stretch;}
+   .grid-xxs-aliself-start {align-self: start;}
+   .grid-xxs-aliself-end {align-self: end;}
+   .grid-xxs-aliself-center {align-self: center;}
+   .grid-xxs-aliself-stretch {align-self: stretch;}
+
+   /* Grid Columns and Gaps */
+   .grid-xxs-cols-1 {grid-template-columns: 1fr;}
+   .grid-xxs-cols-2 {grid-template-columns: repeat(2, 1fr);}
+   .grid-xxs-cols-3 {grid-template-columns: repeat(3, 1fr);;}
+   .grid-xxs-cols-4 {grid-template-columns: repeat(4, 1fr);;}
+   .grid-xxs-cols-6 {grid-template-columns: repeat(6, 1fr);;}
+
+   .grid-xxs-gap-1r {grid-gap: 1rem;}
+   .grid-xxs-gap-2r {grid-gap: 2rem;}
+   .grid-xxs-gap-3r {grid-gap: 3rem;}
+   .grid-xxs-gap-4r {grid-gap: 4rem;}
+   .grid-xxs-gap-5r {grid-gap: 5rem;}
+
+   .grid-xxs-gap-col-1r {grid-column-gap: 1rem;}
+   .grid-xxs-gap-col-2r {grid-column-gap: 2rem;}
+   .grid-xxs-gap-col-3r {grid-column-gap: 3rem;}
+   .grid-xxs-gap-col-4r {grid-column-gap: 4rem;}
+   .grid-xxs-gap-col-5r {grid-column-gap: 5rem;}
+
+   .grid-xxs-gap-row-1r {grid-row-gap: 1rem;}
+   .grid-xxs-gap-row-2r {grid-row-gap: 2rem;}
+   .grid-xxs-gap-row-3r {grid-row-gap: 3rem;}
+   .grid-xxs-gap-row-4r {grid-row-gap: 4rem;}
+   .grid-xxs-gap-row-5r {grid-row-gap: 5rem;}
 
    /* SVG */
    .svg-xxs-fluid svg {width: 100%;}
