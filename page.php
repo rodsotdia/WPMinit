@@ -2,33 +2,33 @@
 
 <div class="wrapper mrg-top-2r">
 
-    <main class="w70 center-content">
-           
-        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+   <main class="w70 center-content">
+         
+      <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-		    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		      
-                <h1><?php the_title(); ?></h1>
+         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+         
+            <h1><?php the_title(); ?></h1>
 
-				<?php the_content(); ?>
+         <?php the_content(); ?>
 
-				<br class="clear">
+         <br class="clear">
 
-				<?php edit_post_link(); ?>
+         <?php edit_post_link(); ?>
 
-			</article>
+      </article>
 
-		<?php endwhile; ?>
-		<?php else: ?>
-			<article>
-				<h2>Nothing to show :(</h2>
-			</article>
-		<?php endif; ?>
-    
-    		
-    </main>
-       
-    <?php get_sidebar(); ?>
+   <?php endwhile; ?>
+   <?php else: ?>
+      <article>
+         <h2>Nothing to show :(</h2>
+      </article>
+   <?php endif; ?>
+   
+      
+   </main>
+      
+   <?php get_sidebar(); ?>
    
 </div>
     

@@ -18,16 +18,16 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!--<div class="overlay-loading overlay-loading-int">
-			 <div class="fl-c fl-c-juscon-center fl-c-alitems-center fl-c-column h100 imagerender pdg-xs-2r">
-				 <span class="text-upper bold text-2r color-white letter-spacing-8p">&nbsp;Loading</span>
-				 <div class="loading-dots">
-				 	<span class="dot-1"></span>
+		<!-- <div class="overlay-loading overlay-loading-int">
+         <div class="fl-c fl-c-juscon-center fl-c-alitems-center fl-c-column h100 imagerender pdg-xs-2r">
+            <span class="text-upper bold text-2r color-white letter-spacing-8p">&nbsp;Loading</span>
+            <div class="loading-dots">
+               <span class="dot-1"></span>
 					<span class="dot-2"></span>
 					<span class="dot-3"></span>
-				 </div>
-			 </div>
-		</div> // Normal Overloading-->
+            </div>
+         </div>
+		</div> // Normal Overloading -->
 
       <header class="wrapper pdg-tb-2r">
 			<nav class="flex flex-juscon-space-between">
