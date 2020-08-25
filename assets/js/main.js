@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 
-
+import Bowser from "bowser";
 
 /*-------
 SCRIPTS

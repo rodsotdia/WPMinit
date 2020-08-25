@@ -26,6 +26,7 @@
   "dependencies": {
     "@swup/debug-plugin": "^1.0.3",
     "autoprefixer": "^9.8.6",
+    "bowser": "^2.10.0",
     "css-loader": "^4.2.2",
     "cssnano": "^4.1.10",
     "gsap": "^3.5.0",
