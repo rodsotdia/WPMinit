@@ -5,12 +5,12 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' -'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-      <link href="<?php echo get_template_directory_uri(); ?>/img/favicon.png" rel="shortcut icon">
+      <link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png" rel="shortcut icon">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/build/tailwind.css" media="all">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/build/tailwind.css" media="all">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" media="all">
 
 		<?php wp_head(); ?>
@@ -32,7 +32,7 @@
       <header>
 			<nav>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo">
 				</a>
 				<div>
             	<?php wp_nav_menu(array('menu' => 'NAME_OF_MENU')); ?>
