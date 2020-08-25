@@ -40,5 +40,4 @@
 
 <!-- <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script> -->
 
-<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.min.js"></script> -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/build/main.js"></script>
