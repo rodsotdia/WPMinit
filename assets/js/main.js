@@ -2,6 +2,8 @@
 LIBRARIES
 ---------------*/
 import Swup from 'swup';
+import SwupDebugPlugin from '@swup/debug-plugin';
+import SwupGtagPlugin from 'swup-gtag-plugin';
 
 /*-------
 SCRIPTS

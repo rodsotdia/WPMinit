@@ -24,12 +24,14 @@
   },
   "homepage": "https://github.com/rodsotdia/WPMinit#readme",
   "dependencies": {
+    "@swup/debug-plugin": "^1.0.3",
     "autoprefixer": "^9.8.6",
     "css-loader": "^4.2.2",
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.1",
     "style-loader": "^1.2.1",
     "swup": "^2.0.11",
+    "swup-gtag-plugin": "0.0.0",
     "tailwindcss": "^1.7.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
