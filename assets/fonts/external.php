@@ -1,7 +1,2 @@
-<?php
-/*
-   Styles in footer.
-*/
-?>
-
+<?php /* Embed External Fonts */ ?>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
