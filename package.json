@@ -28,6 +28,7 @@
     "autoprefixer": "^9.8.6",
     "css-loader": "^4.2.2",
     "cssnano": "^4.1.10",
+    "gsap": "^3.5.0",
     "postcss-cli": "^7.1.1",
     "style-loader": "^1.2.1",
     "swup": "^2.0.11",

@@ -5,6 +5,12 @@ import Swup from 'swup';
 import SwupDebugPlugin from '@swup/debug-plugin';
 import SwupGtagPlugin from 'swup-gtag-plugin';
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
+
+
+
 /*-------
 SCRIPTS
 
