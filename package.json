@@ -33,6 +33,7 @@
     "js-cookie": "^2.2.1",
     "postcss-cli": "^7.1.1",
     "style-loader": "^1.2.1",
+    "swiper": "^6.1.2",
     "swup": "^2.0.11",
     "swup-gtag-plugin": "0.0.0",
     "tailwindcss": "^1.7.3",

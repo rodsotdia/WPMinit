@@ -17,6 +17,11 @@ LIBRARIES
 // Cookies (https://github.com/js-cookie/js-cookie)
 // import Cookies from "js-cookie";
 
+// Swiper (https://github.com/nolimits4web/swiper)
+// import Swiper, { Navigation, Pagination } from 'swiper';
+// import swiperStyles from 'swiper/swiper-bundle.min.css';
+// Swiper.use([Navigation, Pagination]);
+
 /*-------
 SCRIPTS
 
