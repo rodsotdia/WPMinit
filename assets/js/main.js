@@ -1,3 +1,8 @@
+/* ---------
+LIBRARIES
+---------------*/
+import Swup from 'swup';
+
 /*-------
 SCRIPTS
 
