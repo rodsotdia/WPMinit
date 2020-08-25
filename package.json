@@ -3,9 +3,9 @@
   "version": "0.2.1",
   "description": "A personal blank minimal theme for WordPress, to start any project from scratch.",
   "scripts": {
-    "tailwind-dev-watch": "env NODE_ENV=development postcss css/tailwind.css -o css/build/tailwind.css --watch --verbose",
-    "tailwind-dev": "env NODE_ENV=development postcss css/tailwind.css -o css/build/tailwind.css",
-    "tailwind-prod": "env NODE_ENV=production postcss css/tailwind.css -o css/build/tailwind.css",
+    "tailwind-dev-watch": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/css/build/tailwind.css --watch --verbose",
+    "tailwind-dev": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/css/build/tailwind.css",
+    "tailwind-prod": "env NODE_ENV=production postcss assets/css/tailwind.css -o assets/css/build/tailwind.css",
     "webpack-dev-watch": "webpack --watch --mode=development",
     "webpack-dev": "webpack --mode=development",
     "webpack-prod": "webpack --mode=production",
