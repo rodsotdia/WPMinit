@@ -16,7 +16,7 @@
 		<?php wp_head(); ?>
 
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class('font-DMSans'); ?>>
 
 		<!-- <div class="overlay-loading overlay-loading-int">
          <div class="fl-c fl-c-juscon-center fl-c-alitems-center fl-c-column h100 imagerender pdg-xs-2r">

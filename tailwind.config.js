@@ -4,6 +4,9 @@ module.exports = {
       './**/*.php'
    ],
    theme: {
+      fontFamily: {
+         'DMSans': ['DM Sans', 'sans-serif']
+      },
       extend: {},
    },
    variants: {},
