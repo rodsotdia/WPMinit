@@ -1,8 +1,8 @@
 <?php /* Template Name: Default Template */ get_header(); ?>
 
-<main class="wrapper mrg-top-2r">
+<main>
        
-   <section class="w-70 center-content">
+   <section>
 
    <h1><?php the_title(); ?></h1>
 
@@ -11,8 +11,6 @@
          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
          <?php the_content(); ?>
-
-         <br class="clear">
 
          <?php edit_post_link(); ?>
 

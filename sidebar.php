@@ -1,4 +1,4 @@
-<aside class="w70 center-content">
+<aside>
     
    <h3>Sidebar</h3>
    

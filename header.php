@@ -29,8 +29,8 @@
          </div>
 		</div> // Normal Overloading -->
 
-      <header class="wrapper pdg-tb-2r">
-			<nav class="flex flex-juscon-space-between">
+      <header>
+			<nav>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
 				</a>

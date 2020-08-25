@@ -1,6 +1,6 @@
 <footer>
-   <div class="wrapper pdg-tb-1r">
-      <p class="text-center">WPMinit | <?php echo date('Y'); ?></p>
+   <div>
+      <p>WPMinit | <?php echo date('Y'); ?></p>
    </div>
 </footer>
 

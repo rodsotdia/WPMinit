@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main class="wrapper mrg-top-2r">
-	<section class="w70 center-content">
+<main>
+	<section>
 		<article id="post-404">
 
          <h1>Error 404</h1>

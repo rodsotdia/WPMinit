@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<main class="wrapper mrg-top-2r">
+<main>
 
-    <section class="w60 center-content">
+    <section>
 
          <h1><?php _e( 'Tag: ' ); echo single_tag_title('', false); ?></h1>
          <?php get_template_part('loop'); ?>

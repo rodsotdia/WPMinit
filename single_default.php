@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<main class="wrapper mrg-top-2r">
+<main>
 
-   <div class="w70 center-content">
+   <div>
 
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -15,8 +15,6 @@
             <?php  endif; ?>
 
             <?php the_content(); ?>
-
-            <br class="clear">
 
             <?php edit_post_link(); ?>
 
