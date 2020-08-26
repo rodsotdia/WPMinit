@@ -85,4 +85,7 @@ module.exports = {
       fontFamily: ['disabled'],
    },
    plugins: [],
+   corePlugins: {
+      space: false
+   }
 }
