@@ -1,4 +1,6 @@
-const { colors } = require('tailwindcss/defaultTheme')
+const _ = require('lodash')
+const plugin = require('tailwindcss/plugin')
+const colors = require('tailwindcss/defaultTheme')
 
 module.exports = {
    purge: [
@@ -170,13 +172,43 @@ module.exports = {
          '90': '90',
          '100': '100',
       },
-
       extend: {},
    },
    variants: {
       fontFamily: ['disabled'],
    },
-   plugins: [],
+
+   // Configuration - Fluid Typography Plugin
+   textFluid: {
+      'default': {
+         min: '16px',
+         max: '18px',
+         minvw: '425px',
+         maxvw: '1024px'
+      },
+   },
+   plugins: [
+      plugin(function({ addComponents, config}) {
+
+         // Fluid Typography Plugin
+         const textFluid = _.map(config('textFluid'), (value, key) => {
+         let sizeDifference = parseFloat(value.max) - parseFloat(value.min)
+         let windowDifference = parseFloat(value.maxvw) - parseFloat(value.minvw)
+         return {
+            [`.text-fluid-${key}`]: {
+                  fontSize: `${value.min}`,
+               [`@media (min-width: ${value.minvw} )`]: {
+                  fontSize: `calc(${value.min} + ${sizeDifference} * (100vw - ${value.minvw}) / ${windowDifference})`,
+               },
+               [`@media (min-width: ${value.maxvw} )`]: {
+                  fontSize: `${value.max}`,
+               }
+            },
+         }
+         })
+         addComponents(textFluid)
+      })
+   ],
    corePlugins: {
       space: false,
       borderRadius: false,
