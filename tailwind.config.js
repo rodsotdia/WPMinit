@@ -1,3 +1,5 @@
+const { colors } = require('tailwindcss/defaultTheme')
+
 module.exports = {
    purge: [
       './*.php',
@@ -52,6 +54,8 @@ module.exports = {
 
       extend: {},
    },
-   variants: {},
+   variants: {
+      fontFamily: ['disabled'],
+   },
    plugins: [],
 }
