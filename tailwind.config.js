@@ -12,8 +12,12 @@ module.exports = {
          'xl': '1280px',
          'xxl': '1366px'
       },
-      fontFamily: {
-         'DMSans': ['DM Sans', 'sans-serif']
+      colors: {
+         transparent: colors.transparent,
+         current: colors.current,
+         black: colors.black,
+         white: colors.white,
+         gray: colors.gray
       },
       spacing: {
          '0-1/4r': '0.25rem',
@@ -41,7 +45,9 @@ module.exports = {
          '14r': '14rem',
          '15r': '15rem',
       },
-
+      fontFamily: {
+         'DMSans': ['DM Sans', 'sans-serif']
+      },
 
       extend: {},
    },
