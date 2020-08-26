@@ -75,6 +75,11 @@ module.exports = {
          full: '100%',
          screen: '100vw',
       }),
+      maxWidth: theme => ({
+         ...theme('spacing'),
+         none: 'none',
+         full: '100%'
+      }),
       borderWidth: {
          '0': '0',
          '1px': '1px',
@@ -148,6 +153,8 @@ module.exports = {
       space: false,
       borderRadius: false,
       boxShadow: false,
-      container: false
+      container: false,
+      letterSpacing: false,
+      lineHeight: false
    }
 }
