@@ -1,6 +1,6 @@
 const _ = require('lodash')
 const plugin = require('tailwindcss/plugin')
-const colors = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
    purge: [
@@ -18,11 +18,11 @@ module.exports = {
          '3xl': '1536px'
       },
       colors: {
-         transparent: colors.transparent,
-         current: colors.current,
-         black: colors.black,
-         white: colors.white,
-         gray: colors.gray
+         transparent: defaultTheme.colors.transparent,
+         current: defaultTheme.colors.current,
+         black: defaultTheme.colors.black,
+         white: defaultTheme.colors.white,
+         gray: defaultTheme.colors.gray
       },
       spacing: {
          '0': '0',
