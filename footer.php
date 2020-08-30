@@ -4,8 +4,8 @@
    </div>
 </footer>
 
-<?php get_template_part('assets/fonts/external'); ?>
-<?php get_template_part('assets/js/scripts'); ?>
+<?php get_template_part('assets/fonts/load'); ?>
+<?php get_template_part('assets/js/load'); ?>
 
 <?php wp_footer(); ?>
 

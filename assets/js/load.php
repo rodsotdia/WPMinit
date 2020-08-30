@@ -17,4 +17,4 @@
    });
 </script> -->
 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/build/main.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/build/main.js"></script>
