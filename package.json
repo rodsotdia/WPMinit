@@ -1,6 +1,6 @@
 {
   "name": "wpminit",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A personal blank minimal theme for WordPress, to start any project from scratch.",
   "scripts": {
     "tailwind-dev-watch": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/build/tailwind.css --watch --verbose",
@@ -28,18 +28,18 @@
   "dependencies": {
     "@swup/debug-plugin": "^1.0.3",
     "autoprefixer": "^9.8.6",
-    "bowser": "^2.10.0",
-    "css-loader": "^4.2.2",
+    "bowser": "^2.11.0",
+    "css-loader": "^4.3.0",
     "cssnano": "^4.1.10",
-    "gsap": "^3.5.0",
+    "gsap": "^3.5.1",
     "js-cookie": "^2.2.1",
-    "postcss-cli": "^7.1.1",
-    "style-loader": "^1.2.1",
-    "swiper": "^6.1.2",
-    "swup": "^2.0.11",
+    "postcss-cli": "^7.1.2",
+    "style-loader": "^1.3.0",
+    "swiper": "^6.3.5",
+    "swup": "^2.0.12",
     "swup-gtag-plugin": "0.0.0",
     "tailwindcss": "^2.0.1",
-    "webpack": "^4.44.1",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }
 }
