@@ -78,10 +78,11 @@ module.exports = {
          full: '100%',
          screen: '100vw',
       }),
-      maxWidth: theme => ({
+      maxWidth: (theme, { breakpoints }) => ({
          ...theme('spacing'),
          none: 'none',
-         full: '100%'
+         full: '100%',
+         ...breakpoints(theme('screens'))
       }),
       borderWidth: {
          '0': '0',
@@ -144,6 +145,13 @@ module.exports = {
          '700': '700',
          '800': '800',
          '900': '900'
+      },
+      lineHeight: {
+         normal: 'normal',
+         '1': '1',
+         '1-25': '1.25',
+         '1-50': '1.50',
+         '2': '2'
       },
       opacity: {
          '0': '0',
@@ -214,7 +222,6 @@ module.exports = {
       borderRadius: false,
       boxShadow: false,
       container: false,
-      letterSpacing: false,
-      lineHeight: false
+      letterSpacing: false
    }
 }
