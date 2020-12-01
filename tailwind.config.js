@@ -146,6 +146,13 @@ module.exports = {
          '800': '800',
          '900': '900'
       },
+      lineHeight: {
+         normal: 'normal',
+         '1': '1',
+         '1-25': '1.25',
+         '1-50': '1.50',
+         '2': '2'
+      },
       opacity: {
          '0': '0',
          '10': '0.1',
@@ -215,7 +222,6 @@ module.exports = {
       borderRadius: false,
       boxShadow: false,
       container: false,
-      letterSpacing: false,
-      lineHeight: false
+      letterSpacing: false
    }
 }
