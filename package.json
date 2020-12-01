@@ -6,14 +6,11 @@
     "tailwind-dev-watch": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/build/tailwind.css --watch --verbose",
     "tailwind-dev": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/build/tailwind.css",
     "tailwind-prod": "env NODE_ENV=production postcss assets/css/tailwind.css -o assets/build/tailwind.css",
-
     "webpack-dev-watch": "webpack --watch --mode=development",
     "webpack-dev": "webpack --mode=development",
     "webpack-prod": "webpack --mode=production",
-
     "css-main-watch": "postcss style.css -o assets/build/main.css --watch --verbose",
     "css-main": "postcss style.css -o assets/build/main.css",
-
     "dev-watch": "start npm run webpack-dev-watch && start npm run tailwind-dev-watch && start npm run css-main-watch",
     "dev": "npm run webpack-dev && npm run tailwind-dev && npm run css-main",
     "build": "npm run webpack-prod && npm run tailwind-prod && npm run css-main"
@@ -41,7 +38,7 @@
     "swiper": "^6.1.2",
     "swup": "^2.0.11",
     "swup-gtag-plugin": "0.0.0",
-    "tailwindcss": "^1.7.3",
+    "tailwindcss": "^2.0.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
