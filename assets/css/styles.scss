@@ -1,0 +1,20 @@
+/*------------------
+WEBSITE
+------------------*/
+@import "styles/global.scss";
+
+/*------------------
+WORDPRESS
+------------------*/
+@import "styles/wordpress-core.scss";
+@import "styles/wordpress-plugins.scss";
+
+/*------------------
+ANIMATIONS
+------------------*/
+@import "styles/animations.scss";
+
+/*------------------
+MISCELANEOUS
+------------------*/
+@import "styles/misc.scss";

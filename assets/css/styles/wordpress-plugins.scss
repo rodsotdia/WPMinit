@@ -1,0 +1,56 @@
+/*------------------------------------*\
+   GRAVITY FORMS
+\*------------------------------------*/
+.gform_wrapper {
+   /* Form Gravity Forms */
+   ul.gform_fields {list-style: none;margin: 0;padding: 0;margin-left: -1rem;margin-right: -1rem;}
+   label.gfield_label {padding-bottom: 0.3rem;display: block;}
+   .gfield span.gfield_required {color: red;font-weight: 700;}
+   .gform_footer {margin-top: 1rem;}
+   .gfield_description {margin-bottom: 1rem;}
+   .gfield_visibility_hidden {display: none;}
+
+   /* ----- Style inputs ----- */
+   .gfield input[type="text"], .gfield input[type="email"], .gfield textarea, .gfield select {width: 100%;padding: 0.5rem;border: 2px solid transparent;border-radius: 0.2rem;background-color: lightgray;}
+   .gfield input[type="text"]:focus, .gfield input[type="email"]:focus, .gfield textarea:focus, .gfield select:focus {border: 2px solid blue;}
+
+   /* ---- Checkbox, radio ------ */
+   ul.gfield_checkbox input[type="checkbox"]:checked+label,
+   ul.gfield_radio input[type="radio"]:checked+label {font-weight: 700;}
+   ul.gfield_checkbox input[type="checkbox"] + label,
+   ul.gfield_radio input[type="radio"] + label {padding-left: 4px}
+   ul.gfield_checkbox {list-style: none;margin: 0;padding: 0;}
+
+   /* ----- Email field ------ */
+   .ginput_container_email span {width: 50%;float: left;}
+   .ginput_container_email span label {display: none;}
+   .ginput_container_email span.ginput_left {padding-right: 1rem;}
+   .ginput_container_email span.ginput_right {padding-left: 1rem;}
+
+   /* ----- Date field ------- */
+   .ginput_container_date .gfield_date_dropdown_day, .ginput_container_date .gfield_date_dropdown_month {float: left;margin-right: 1rem;}
+   .ginput_container_date .gfield_date_dropdown_year {float: left;}
+   .ginput_container_date select {width: auto;}
+
+   /* ----- File upload file ------ */
+   .ginput_container_fileupload {padding: 1rem;text-align: center;border: 2px dashed #cecece;}
+   .ginput_container_fileupload span.screen-reader-text {display: none;}
+
+   /* ------ Confirmation messages ------- */
+   .validation_error {color: red;font-weight: 700;font-size: 16px;margin: 25px 0;}
+   .gfield_description.validation_message {color: red;font-weight: 700;}
+   .gform_body .gform_fields .gfield_error input, .gform_body .gform_fields .gfield_error textarea, .gform_body .gform_fields .gfield_error select {border: 2px solid red;}
+   .gform_body .gform_fields .gfield_error .gform_fileupload_multifile {border: 2px dashed red;}
+   .gform_confirmation_wrapper {font-size: 16px;color: white;background: #f9a314;padding: 30px;}
+   .gform_confirmation_wrapper .gform_confirmation_message p {font-weight: 700;margin: 0;}
+}
+
+/*------------------------------------*\
+   LAZY LOAD
+\*------------------------------------*/
+img[data-lazy-src] {
+   opacity: 0;
+}
+img.lazyloaded {
+   transition: opacity .4s linear .1s;opacity: 1;
+}
