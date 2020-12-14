@@ -1,5 +1,9 @@
 # Node Modules
 node_modules/
 
+# Build folder
+assets/build/
+
 # Tailwind Reference
+# npx tailwindcss init tailwind-full.config.js --full
 tailwind-full.config.js
