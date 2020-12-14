@@ -1,19 +1,20 @@
 {
   "name": "wpminit",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A personal blank minimal theme for WordPress, to start any project from scratch.",
   "scripts": {
     "tailwind-dev-watch": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/build/tailwind.css --watch --verbose",
     "tailwind-dev": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/build/tailwind.css",
     "tailwind-prod": "env NODE_ENV=production postcss assets/css/tailwind.css -o assets/build/tailwind.css",
+    "sass-watch": "sass --watch assets/css/styles.scss:assets/build/main.css",
+    "sass": "sass assets/css/styles.scss:assets/build/main.css",
+    "post-css-main": "postcss assets/build/main.css -o assets/build/main.css",
     "webpack-dev-watch": "webpack --watch --mode=development",
     "webpack-dev": "webpack --mode=development",
     "webpack-prod": "webpack --mode=production",
-    "css-main-watch": "postcss style.css -o assets/build/main.css --watch --verbose",
-    "css-main": "postcss style.css -o assets/build/main.css",
-    "dev-watch": "start npm run webpack-dev-watch && start npm run tailwind-dev-watch && start npm run css-main-watch",
-    "dev": "npm run webpack-dev && npm run tailwind-dev && npm run css-main",
-    "build": "npm run webpack-prod && npm run tailwind-prod && npm run css-main"
+    "dev-watch": "start npm run webpack-dev-watch && start npm run tailwind-dev-watch && start npm run sass-watch",
+    "dev": "npm run webpack-dev && npm run tailwind-dev && npm run sass && npm run post-css-main",
+    "build": "npm run webpack-prod && npm run tailwind-prod && npm run sass && npm run post-css-main"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "js-cookie": "^2.2.1",
     "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
+    "sass": "^1.30.0",
     "style-loader": "^1.3.0",
     "swiper": "^6.3.5",
     "swup": "^2.0.12",
