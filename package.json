@@ -1,6 +1,6 @@
 {
   "name": "wpminit",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A personal blank minimal theme for WordPress, to start any project from scratch.",
   "scripts": {
     "tailwind-dev-watch": "env NODE_ENV=development postcss assets/css/tailwind.css -o assets/build/tailwind.css --watch --verbose",
